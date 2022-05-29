@@ -1,7 +1,25 @@
 import Head from "next/head";
-import Image from "next/image";
+import Stripe from "stripe";
 
-export default function Home() {
+export async function getServerSideProps(context) {
+  const stripe = new Stripe(process.env.STRIPE_SECRET ?? "", {
+    apiVersion: "2020-08-27",
+  });
+
+  const res = await stripe.prices.list({
+    limit: 10,
+    expand: ["data.product"],
+  });
+
+  const prices = res.data.filter((price) => price.active);
+
+  return {
+    props: { prices },
+  };
+}
+
+export default function Home({ prices }) {
+  console.log(prices);
   return (
     <div>
       <Head>
