@@ -47,11 +47,7 @@ export default function Home({ prices }) {
       </Head>
 
       {prices.map((price, index) => {
-        return (
-          <PurchaseCard key={index} price={price} className='cursor-pointer'>
-            buy {price.product.name}
-          </PurchaseCard>
-        );
+        return <PurchaseCard key={index} price={price}></PurchaseCard>;
       })}
     </div>
   );
