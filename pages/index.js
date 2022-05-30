@@ -20,11 +20,11 @@ export async function getServerSideProps(context) {
 }
 
 export default function Home({ prices }) {
-  console.log(prices);
+  // console.log(prices[1]);
   async function checkout() {
     const lineItems = [
       {
-        price: prices[0].product.id,
+        price: prices[0].id,
         quantity: 1,
       },
     ];
@@ -34,7 +34,7 @@ export default function Home({ prices }) {
     });
     const data = await res.json();
     console.log(data);
-    // Router.push(data.session.url);
+    Router.push(data.session.url);
   }
   console.log(prices);
   return (
