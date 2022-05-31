@@ -30,4 +30,11 @@ export function AppWrapper({ children }) {
       localStorage.setItem("mg-items", JSON.stringify(state));
     }
   }, [state]);
+  return (
+    <AppContext.Provider value={sharedState}>{children}</AppContext.Provider>
+  );
+}
+
+export function useAppContext() {
+  return useContext(AppContext);
 }
