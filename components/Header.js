@@ -8,12 +8,18 @@ function Header() {
   const modalRef = React.useRef();
 
   async function checkout() {
-    const lineItems = [
-      {
-        price: prices[0].id,
-        quantity: 1,
-      },
-    ];
+    const lineItems = Object.keys(state.products).map((id) => {
+      return {
+        price: id,
+        quantity: state.products[id],
+      };
+    });
+    // const lineItems = [
+    //   {
+    //     price: prices[0].id,
+    //     quantity: 1,
+    //   },
+    // ];
     const res = await fetch("api/checkout", {
       method: "POST",
       body: JSON.stringify({ lineItems }),
