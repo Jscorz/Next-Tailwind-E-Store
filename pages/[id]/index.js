@@ -22,6 +22,9 @@ function Description(props) {
     };
   }
 
+  if (!product) {
+    return <div>no product</div>;
+  }
   return (
     <div className='mx-auto w-fit flex flex-wrap justify-center md:gap-6'>
       <img
@@ -29,6 +32,14 @@ function Description(props) {
         alt={product.product.id}
         style={{ maxHeight: "600px" }}
       />
+      <div className='min-w-min max-w-min whitespace-nowrap'>
+        <h1 className='text-sm py-3 font-light tracking-wide text-xl lg:text-3xl'>
+          {product.product.name}
+        </h1>
+        <div className='max-w-full whitespace-normal text-jusitfy pb-4 font-light'>
+          <p>{product.product.description}</p>
+        </div>
+      </div>
       <button onClick={addToBasket(product)}>ADD TO BASKET</button>
     </div>
   );
