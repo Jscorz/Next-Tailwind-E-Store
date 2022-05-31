@@ -32,15 +32,24 @@ function Description(props) {
         alt={product.product.id}
         style={{ maxHeight: "600px" }}
       />
-      <div className='min-w-min max-w-min whitespace-nowrap'>
-        <h1 className='text-sm py-3 font-light tracking-wide text-xl lg:text-3xl'>
-          {product.product.name}
-        </h1>
+      <div className=''>
+        <div className='flex justify-between items-center'>
+          <h1 className='text-sm py-3 font-light tracking-wide capitalize text-2xl lg:text-3xl'>
+            {product.product.name}
+          </h1>
+          <p>${product.unit_amount / 100}</p>
+        </div>
         <div className='max-w-full whitespace-normal text-jusitfy pb-4 font-light'>
           <p>{product.product.description}</p>
         </div>
+        <hr />
+        <button
+          onClick={addToBasket(product)}
+          className='w-full my-4 py-4 border border-solid border-gray-100 shadow bg-slate-100 text-slate-700 font-light transition duration-300 hover:opacity-50'
+        >
+          ADD TO BASKET
+        </button>
       </div>
-      <button onClick={addToBasket(product)}>ADD TO BASKET</button>
     </div>
   );
 }
