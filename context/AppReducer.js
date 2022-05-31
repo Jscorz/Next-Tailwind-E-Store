@@ -18,7 +18,7 @@ export const AppReducer = (state = initialState, action) => {
     case "remove_product": {
       return {
         ...state,
-        products: Object.keys(state.product).reduce((acc, curr) => {
+        products: Object.keys(state.products).reduce((acc, curr) => {
           if (curr !== action.value) {
             return { ...acc, [curr]: state.products[curr] };
           }
