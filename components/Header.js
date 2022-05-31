@@ -1,9 +1,13 @@
 import React from "react";
+import Router from "next/router";
 
 function Header() {
   return (
-    <div className='shadow-lg py-8 flex justify-center items-center'>
-      <h1 className=' flex-1 text-center cursor-pointer select-none transition hover:opacity-50 duration-300'>
+    <div className='shadow-lg py-8 flex sticky top-0 justify-center items-center bg-white'>
+      <h1
+        onClick={() => Router.push("/")}
+        className=' flex-1 text-center cursor-pointer select-none transition hover:opacity-50 duration-300'
+      >
         Modern Styles
       </h1>
       <div>
