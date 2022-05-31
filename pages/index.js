@@ -25,21 +25,7 @@ export async function getServerSideProps(context) {
 export default function Home({ prices }) {
   // console.log(prices[1]);
   const { state, dispatch } = useAppContext();
-  async function checkout() {
-    const lineItems = [
-      {
-        price: prices[0].id,
-        quantity: 1,
-      },
-    ];
-    const res = await fetch("api/checkout", {
-      method: "POST",
-      body: JSON.stringify({ lineItems }),
-    });
-    const data = await res.json();
-    console.log(data);
-    Router.push(data.session.url);
-  }
+
   useEffect(() => {
     dispatch({
       type: "set_prices",
