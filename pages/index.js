@@ -1,7 +1,9 @@
 import Head from "next/head";
 import Router from "next/router";
+import { useEffect } from "react";
 import Stripe from "stripe";
 import PurchaseCard from "../components/PurchaseCard";
+import { useAppContext } from "../context/CardContext";
 
 export async function getServerSideProps(context) {
   const stripe = new Stripe(process.env.STRIPE_SECRET ?? "", {
@@ -22,6 +24,7 @@ export async function getServerSideProps(context) {
 
 export default function Home({ prices }) {
   // console.log(prices[1]);
+  const { state, dispatch } = useAppContext();
   async function checkout() {
     const lineItems = [
       {
@@ -37,6 +40,13 @@ export default function Home({ prices }) {
     console.log(data);
     Router.push(data.session.url);
   }
+  useEffect(() => {
+    dispatch({
+      type: "set_prices",
+      value: prices,
+    });
+  }, [prices]);
+
   console.log(prices);
   return (
     <div>

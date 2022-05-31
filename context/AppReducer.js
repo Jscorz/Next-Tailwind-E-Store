@@ -15,7 +15,7 @@ export const AppReducer = (state = initialState, action) => {
         },
       };
     }
-    case "remove-product": {
+    case "remove_product": {
       return {
         ...state,
         products: Object.keys(state.product).reduce((acc, curr) => {
