@@ -1,4 +1,4 @@
-#Next Tailwind E Store
+# Next Tailwind E Store
 
 ## Getting Started
 
