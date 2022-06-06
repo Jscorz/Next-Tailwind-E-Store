@@ -51,11 +51,11 @@ function Header() {
 	}
 
 	return (
-		<div className='shadow-lg py-8 flex sticky top-0 justify-center items-center bg-white'>
+		<div className='shadow-lg py-8 flex sticky top-0 justify-center items-center bg-white z-50'>
 			{displayCheckout && (
 				<div
 					ref={modalRef}
-					className='absolute bg-white shadow border border-gray-200 border-solid z-50 top-0 h-screen w-screen sm:w-80 right-0 flex flex-col gap-2 px-2'
+					className='absolute bg-white shadow border border-gray-200 border-solid z-0 top-0 h-screen w-screen sm:w-80 right-0 flex flex-col gap-2 px-2'
 				>
 					<div className='overflow-auto flex-1'>
 						<div className='flex justify-between items-center'>
