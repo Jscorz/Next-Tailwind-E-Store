@@ -7,7 +7,7 @@ export default function PurchaseCard(props) {
 	return (
 		<div
 			onClick={() => Router.push(`/${price.id}`)}
-			className='w-60 h-100 shadow-md border border-solid border-gray-100 cursor-pointer transition hover:opacity-50 bg-white'
+			className='w-60 h-100 shadow-md border border-solid border-gray-100 cursor-pointer transition hover:opacity-50 hover:shadow-lg bg-white'
 		>
 			{price.product.images && (
 				<div className=''>
