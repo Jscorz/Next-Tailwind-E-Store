@@ -156,14 +156,14 @@ function Header() {
 			<div className='flex'>
 				<i className='fa-solid fa-heart text-pink-500  pl-6 py-2 text-xl sm:text-3xl mr-4 transition hover:opacity-60 duration-300 cursor-pointer'></i>
 			</div>
-			<div className='flex align-center justify-center border border-gray-700 text-gray-900 rounded-full h-7 w-7 text-center -ml-3'>
+			<div className='flex align-center justify-center border border-gray-700 text-sm text-gray-900 rounded-full h-6 w-6 text-center -ml-3'>
 				0
 			</div>
 			<div onClick={() => setDisplayCheckout(!displayCheckout)}>
-				<i className='fa-solid fa-bag-shopping text-gray-800 pr-0.5 pl-6 py-2 text-xl sm:text-3xl mr-4 transition hover:opacity-60 duration-300 cursor-pointer'></i>
+				<i className='fa-solid fa-bag-shopping text-gray-600 pr-0.5 pl-6 py-2 text-xl sm:text-3xl mr-4 transition hover:opacity-60 duration-300 cursor-pointer'></i>
 			</div>
-			<div className='flex align-center justify-center border border-gray-700 text-gray-900 rounded-full h-7 w-7 text-center -ml-3 mr-7'>
-				{Object.keys(state.products).length}
+			<div className='flex align-center justify-center border border-gray-700 text-sm text-gray-900 rounded-full h-6 w-6 text-center -ml-3 mr-7'>
+				<div>{Object.keys(state.products).length}</div>
 			</div>
 		</div>
 	);
