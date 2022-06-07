@@ -8,6 +8,9 @@ module.exports = {
 			letterSpacing: {
 				widest: ".3em",
 			},
+			height: (theme) => ({
+				"screen/70": "70vh",
+			}),
 		},
 	},
 	plugins: [],
