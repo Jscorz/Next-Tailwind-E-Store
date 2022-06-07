@@ -14,6 +14,7 @@ function Header() {
 				quantity: state.products[id],
 			};
 		});
+		console.log(lineItems.length);
 		// const lineItems = [
 		//   {
 		//     price: prices[0].id,
@@ -51,7 +52,7 @@ function Header() {
 	}
 
 	return (
-		<div className='shadow-lg py-8 flex sticky top-0 justify-center items-center bg-white z-50'>
+		<div className='shadow-lg py-8 flex sticky top-0 justify-center items-center bg-white z-50 '>
 			{displayCheckout && (
 				<div
 					ref={modalRef}
@@ -74,7 +75,7 @@ function Header() {
 							const product = state.prices.find(
 								(val) => val.id === productId
 							);
-							console.log(product);
+
 							return (
 								<div
 									key={index}
@@ -153,7 +154,7 @@ function Header() {
 				</h1>
 			</div>
 			<div className='flex'>
-				<i class='fa-solid fa-heart text-pink-500  pl-6 py-2 text-xl sm:text-3xl mr-4 transition hover:opacity-60 duration-300 cursor-pointer'></i>
+				<i className='fa-solid fa-heart text-pink-500  pl-6 py-2 text-xl sm:text-3xl mr-4 transition hover:opacity-60 duration-300 cursor-pointer'></i>
 			</div>
 			<div className='flex align-center justify-center border border-gray-700 text-gray-900 rounded-full h-7 w-7 text-center -ml-3'>
 				0
@@ -162,7 +163,7 @@ function Header() {
 				<i className='fa-solid fa-bag-shopping text-gray-800 pr-0.5 pl-6 py-2 text-xl sm:text-3xl mr-4 transition hover:opacity-60 duration-300 cursor-pointer'></i>
 			</div>
 			<div className='flex align-center justify-center border border-gray-700 text-gray-900 rounded-full h-7 w-7 text-center -ml-3 mr-7'>
-				0
+				{Object.keys(state.products).length}
 			</div>
 		</div>
 	);
