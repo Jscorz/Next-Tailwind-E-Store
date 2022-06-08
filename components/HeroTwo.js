@@ -13,7 +13,7 @@ function HeroTwo() {
 				layout='fill'
 				className='object-cover z-0'
 			/>
-			<div class='absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 '></div>
+			<div className='absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 '></div>
 			<div className='min-w-full flex flex-col z-10 absolute text-center top-1/3'>
 				<div className='w-30 space-y-8'>
 					<h2 className='text-white '>Sale up to 50% Off</h2>
