@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Stripe from "stripe";
 import Head from "next/head";
-import HeroOne from "../components/HeroOne";
-import HeroTwo from "../components/HeroTwo";
+import Hero from "../components/Hero";
 import PurchaseCard from "../components/PurchaseCard";
 import { useAppContext } from "../context/CardContext";
 
@@ -45,9 +44,9 @@ export default function Home({ prices }) {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 
-			{index ? <HeroTwo /> : <HeroOne />}
+			<Hero />
 
-			<div className='flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-5'>
+			<div className='flex flex-col space-y-4 md:flex-row md:space-y-2 md:space-x-5 lg:space-x-20'>
 				{prices.map((price, index) => {
 					return (
 						<PurchaseCard key={index} price={price}></PurchaseCard>

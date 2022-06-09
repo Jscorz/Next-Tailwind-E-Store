@@ -19,10 +19,10 @@ export default function PurchaseCard(props) {
 				</div>
 			)}
 
-			<h1 className='text-sm text-center py-3 font-light tracking-wide'>
+			<h1 className='text-sm text-center pt-6 pb-3 font-light tracking-wide'>
 				{price.product.name}
 			</h1>
-			<p className='text-center text-sm font-extralight'>
+			<p className='text-center text-sm pb-2 font-extralight'>
 				${price.unit_amount / 100}
 			</p>
 		</div>

@@ -56,7 +56,7 @@ function Header() {
 						<div className='flex justify-between items-center'>
 							<h1 className='text-4xl py-4'>CART</h1>
 							<div
-								className='ml-auto w-fit p-2 cursor-pointer select-none transition duration-300 opacity-50'
+								className='ml-auto w-fit p-2 cursor-pointer select-none transition duration-300 opacity-60 hover:text-red-700 text-lg'
 								onClick={() => setDisplayCheckout(false)}
 							>
 								╳
@@ -129,21 +129,21 @@ function Header() {
 			)}
 			<h1
 				onClick={() => Router.push("/")}
-				className=' flex-1 text-left  pl-7 cursor-pointer select-none transition hover:opacity-50 duration-300'
+				className=' flex-1 text-left text-lg  pl-7 cursor-pointer select-none transition hover:opacity-50 duration-300'
 			>
 				Your next e-commerce
 			</h1>
 			<div className='flex justify-between space-x-10'>
-				<h1 className='hidden cursor-pointer select-none transition hover:opacity-50 duration-300 md:block '>
+				<h1 className='hidden cursor-pointer  text-lg select-none transition hover:opacity-50 duration-300 md:block '>
 					Shop
 				</h1>
-				<h1 className='hidden cursor-pointer select-none transition hover:opacity-50 duration-300 md:block '>
+				<h1 className='hidden cursor-pointer  text-lg select-none transition hover:opacity-50 duration-300 md:block '>
 					Products
 				</h1>
-				<h1 className='hidden cursor-pointer select-none transition hover:opacity-50 duration-300 md:block '>
+				<h1 className='hidden cursor-pointer text-lg select-none transition hover:opacity-50 duration-300 md:block '>
 					About
 				</h1>
-				<h1 className='hidden cursor-pointer select-none transition hover:opacity-50 duration-300 md:block '>
+				<h1 className='hidden cursor-pointer text-lg select-none transition hover:opacity-50 duration-300 md:block '>
 					Contact
 				</h1>
 			</div>
