@@ -14,13 +14,7 @@ function Header() {
 				quantity: state.products[id],
 			};
 		});
-		console.log(lineItems.length);
-		// const lineItems = [
-		//   {
-		//     price: prices[0].id,
-		//     quantity: 1,
-		//   },
-		// ];
+
 		const res = await fetch("api/checkout", {
 			method: "POST",
 			body: JSON.stringify({ lineItems }),
