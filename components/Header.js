@@ -131,7 +131,7 @@ function Header() {
 				onClick={() => Router.push("/")}
 				className=' flex-1 text-left text-lg  pl-7 cursor-pointer select-none transition hover:opacity-50 duration-300'
 			>
-				Your next e-commerce
+				ShoeCommerce
 			</h1>
 			<div className='flex justify-between space-x-10'>
 				<h1 className='hidden cursor-pointer  text-lg select-none transition hover:opacity-50 duration-300 md:block '>

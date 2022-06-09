@@ -21,7 +21,7 @@ function Hero() {
 						Orange / Black Nike
 					</h1>
 
-					<button className=' m-1 shadow bg-black text-white font-light text-sm uppercase tracking-wider py-3 px-6 transition duration-300 hover:opacity-50 select-none'>
+					<button className=' m-1 shadow bg-red-900 text-white font-light text-sm uppercase tracking-wider py-3 px-6 transition duration-300 hover:opacity-50 select-none'>
 						Start Shopping
 					</button>
 				</div>
