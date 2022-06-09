@@ -24,7 +24,6 @@ export async function getServerSideProps(context) {
 }
 
 export default function Home({ prices }) {
-	// console.log(prices[1]);
 	const { state, dispatch } = useAppContext();
 	const [index, setIndex] = useState(true);
 

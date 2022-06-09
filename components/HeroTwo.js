@@ -21,8 +21,8 @@ function HeroTwo() {
 						Blue / Black Nike
 					</h1>
 
-					<button className=' m-1 shadow bg-black text-white font-light text-sm py-2 px-5 transition duration-300 hover:opacity-50 select-none'>
-						Start Shopping
+					<button className=' m-1 shadow bg-black text-white font-light text-sm uppercase py-2 px-5 transition duration-300 hover:opacity-50 select-none'>
+						Shop Now
 					</button>
 				</div>
 			</div>

@@ -14,7 +14,7 @@ export default function PurchaseCard(props) {
 					<img
 						src={price.product.images[0]}
 						alt={price.product.name}
-						className='w-full  object-cover md:hover:scale-110 duration-200'
+						className='w-full h-60 object-cover md:hover:scale-110 duration-200'
 					/>
 				</div>
 			)}
