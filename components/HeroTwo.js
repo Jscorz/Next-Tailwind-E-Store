@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import heroImg from "../images/shoe-10.jpg";
+import heroImg from "../images/shoe-2.jpg";
 
 function HeroTwo() {
 	let [index, setIndex] = useState();

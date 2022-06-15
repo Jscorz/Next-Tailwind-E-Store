@@ -46,12 +46,14 @@ export default function Home({ prices }) {
 			</Head>
 
 			<Hero />
-			<div className='flex justify-center space-x-4 py-14'>
-				<h1 className='text-2xl text-slate-900 font-semibold tracking-wider'>
+			<div className='flex justify-center items-center space-x-4 py-14 px-5'>
+				<h1 className='text-lg text-slate-900 font-semibold tracking-wider whitespace-nowrap md:text-2xl lg:text-3xl'>
 					Handpicked Items
 				</h1>
 				<div>
-					<h2 className='text-md uppercase'>View All Products</h2>
+					<h2 className='text-sm uppercase whitespace-nowrap md:text-xl lg:text-2xl'>
+						View All Products
+					</h2>
 					<div className='bg-slate-900 h-0.5 w-full'></div>
 				</div>
 			</div>
