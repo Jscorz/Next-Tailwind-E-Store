@@ -121,7 +121,7 @@ function Header() {
 					</div>
 					<button
 						onClick={checkout}
-						className=' m-1 shadow bg-black text-white font-light text-sm py-2 transition duration-300 hover:opacity-50 select-none'
+						className=' m-1 shadow bg-black text-white font-light text-sm py-2 transition duration-300 hover:border hover:border-black hover:bg-transparent hover:text-black select-none'
 					>
 						CHECKOUT
 					</button>

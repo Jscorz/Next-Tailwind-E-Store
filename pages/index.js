@@ -4,6 +4,7 @@ import Head from "next/head";
 import Hero from "../components/Hero";
 import PurchaseCard from "../components/PurchaseCard";
 import { useAppContext } from "../context/CardContext";
+import HeroTwo from "../components/HeroTwo";
 
 export async function getServerSideProps(context) {
 	const stripe = new Stripe(process.env.STRIPE_SECRET ?? "", {
@@ -45,7 +46,16 @@ export default function Home({ prices }) {
 			</Head>
 
 			<Hero />
-
+			<div className='flex justify-center space-x-4 py-14'>
+				<h1 className='text-2xl text-slate-900 font-semibold tracking-wider'>
+					Handpicked Items
+				</h1>
+				<div>
+					<h2 className='text-md uppercase'>View All Products</h2>
+					<div className='bg-slate-900 h-0.5 w-full'></div>
+				</div>
+			</div>
+			<HeroTwo />
 			<div className='flex flex-col space-y-4 md:flex-row md:space-y-2 md:space-x-5 lg:space-x-20'>
 				{prices.map((price, index) => {
 					return (

@@ -10,6 +10,9 @@ module.exports = {
 			},
 			height: (theme) => ({
 				"screen/70": "70vh",
+				"screen/80": "80vh",
+				"screen/90": "90vh",
+				"screen/100": "100vh",
 			}),
 		},
 	},
