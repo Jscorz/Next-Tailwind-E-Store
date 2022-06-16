@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import Router from "next/router";
 import { GiShoppingCart } from "react-icons/gi";
+import { AiOutlineHeart } from "react-icons/ai";
+import { VscGitCompare } from "react-icons/vsc";
+import { GrView } from "react-icons/gr";
 
 export default function PurchaseCard(props) {
 	const { price } = props;
@@ -22,17 +25,17 @@ export default function PurchaseCard(props) {
 	};
 
 	return (
-		<div className='mx-auto w-full h-100 shadow-md border border-solid border-gray-100 transition  hover:shadow-xl bg-red-500 relative overflow-hidden'>
+		<div className='mx-auto w-full h-100 shadow-md border border-solid border-gray-100 transition  hover:shadow-xl relative group'>
 			{price.product.images && (
 				<div className=''>
 					<img
 						src={price.product.images[0]}
 						alt={price.product.name}
-						className='w-full h-60 object-cover transition md:hover:scale-110 duration-200'
+						className='w-full h-48 object-cover transition md:hover:scale-110 duration-200 overflow-hidden'
 					/>
 				</div>
 			)}
-			<div className='flex justify-between file:z-50 align-center'>
+			<div className='flex justify-between file:z-50 align-center bg-red-500 opacity-90 '>
 				<div
 					className='px-2 text-xl  text-white font-semibold cursor-pointer border border-gray-400 text-center py-2 select-none hover:bg-red-600 hover:scale-105 transition duration-100'
 					onClick={() => reduceCount()}
@@ -53,6 +56,19 @@ export default function PurchaseCard(props) {
 					onClick={() => Router.push(`/${price.id}`)}
 				>
 					<GiShoppingCart className='justify-self-end' />
+				</div>
+			</div>
+			<div className='absolute top-5 right-5 max-h-28 w-8 bg-gray-100 opacity-50 hidden group-hover:block transition duration-300'>
+				<div className='flex flex-col items-center justify-between'>
+					<div className='pb-3 pt-1 hover:scale-105'>
+						<AiOutlineHeart className='h-6 w-6' />
+					</div>
+					<div className='pb-3 hover:scale-105'>
+						<VscGitCompare className='h-6 w-6' />
+					</div>
+					<div className='pb-1 hover:scale-110'>
+						<GrView className='h-6 w-6' />
+					</div>
 				</div>
 			</div>
 			{/* <h1 className='text-white text-sm text-center pt-6 pb-3 font-light tracking-wide'>
