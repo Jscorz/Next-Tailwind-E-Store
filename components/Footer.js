@@ -27,25 +27,25 @@ function Footer() {
 						<div class='flex flex-col space-y-3'>
 							<a
 								href='#'
-								class='transition duration-300 hover:text-cyan-500'
+								class='transition duration-300 hover:text-teal-400'
 							>
 								About
 							</a>
 							<a
 								href='#'
-								class='transition duration-300 hover:text-cyan-500'
+								class='transition duration-300 hover:text-teal-400'
 							>
 								Jobs
 							</a>
 							<a
 								href='#'
-								class='transition duration-300 hover:text-cyan-500'
+								class='transition duration-300 hover:text-teal-400'
 							>
 								Press
 							</a>
 							<a
 								href='#'
-								class='transition duration-300 hover:text-cyan-500'
+								class='transition duration-300 hover:text-teal-400'
 							>
 								Blog
 							</a>
@@ -53,19 +53,19 @@ function Footer() {
 						<div class='flex flex-col space-y-3'>
 							<a
 								href='#'
-								class='transition duration-300 hover:text-cyan-500'
+								class='transition duration-300 hover:text-teal-400'
 							>
 								Contact Us
 							</a>
 							<a
 								href='#'
-								class='transition duration-300 hover:text-cyan-500'
+								class='transition duration-300 hover:text-teal-400'
 							>
 								Terms
 							</a>
 							<a
 								href='#'
-								class='transition duration-300 hover:text-cyan-500'
+								class='transition duration-300 hover:text-teal-400'
 							>
 								Privacy
 							</a>
