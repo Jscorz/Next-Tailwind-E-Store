@@ -25,7 +25,7 @@ function Email() {
 							placeholder='Your email address'
 							className='p-2 px-4 text-center text-white bg-gray-200 border border-zinc-600 placeholder:text-xs placeholder:text-center md:text-left placeholder:md:text-left focus:outline-none'
 						/>
-						<button class='px-5 py-3 text-xs  text-zinc-800 bg-lime-500 hover:bg-lime-700 hover:text-white duration-500'>
+						<button className='px-5 py-3 text-xs  text-zinc-800 bg-lime-500 hover:bg-lime-700 hover:text-white duration-500'>
 							Subscribe
 						</button>
 					</div>
