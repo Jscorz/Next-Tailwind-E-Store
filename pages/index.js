@@ -58,8 +58,8 @@ export default function Home({ prices }) {
 					<div className='bg-slate-900 h-0.5 w-full'></div>
 				</div>
 			</div>
-			<HeroTwo />
-			<div className='w-11/12 mx-auto grid grid-cols-2 gap-4 md:grid-cols-4'>
+			<div className='w-11/12 mx-auto grid grid-cols-2 gap-6 md:grid-cols-4 md:gap-8 lg:grid-cols-8 lg:grid-rows-2 '>
+				<HeroTwo />
 				{featuredPrices.map((price, index) => {
 					return (
 						<PurchaseCard key={index} price={price}></PurchaseCard>

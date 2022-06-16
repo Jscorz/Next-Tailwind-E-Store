@@ -6,7 +6,7 @@ function HeroTwo() {
 	let [index, setIndex] = useState();
 
 	return (
-		<div className='w-11/12  h-96  md:h-screen/70 relative z-0 mx-auto mb-10 overflow-hidden'>
+		<div className='w-full  h-96  md:h-screen/70 relative z-0 mx-auto  overflow-hidden col-span-2 md:col-span-4 lg:row-span-2 '>
 			<Image
 				src={heroImg}
 				alt=''
