@@ -58,7 +58,7 @@ export default function Home({ prices }) {
 				</div>
 			</div>
 			<HeroTwo />
-			<div className='flex flex-col space-y-4 md:flex-row md:space-y-2 md:space-x-5 lg:space-x-20'>
+			<div className='w-11/12 mx-auto grid grid-cols-2 gap-4 md:flex-row md:space-y-2 md:space-x-5 lg:space-x-20'>
 				{prices.map((price, index) => {
 					return (
 						<PurchaseCard key={index} price={price}></PurchaseCard>

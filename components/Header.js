@@ -1,6 +1,8 @@
 import React from "react";
 import Router from "next/router";
 import { useAppContext } from "../context/CardContext";
+import { AiOutlineHeart } from "react-icons/ai";
+import { GiShoppingCart } from "react-icons/gi";
 
 function Header() {
 	const { state, dispatch } = useAppContext();
@@ -148,14 +150,28 @@ function Header() {
 				</h1>
 			</div>
 			<div className='flex'>
-				<i className='fa-solid fa-heart text-pink-500  pl-6 py-2 text-xl sm:text-3xl mr-4 transition hover:opacity-60 duration-300 cursor-pointer'></i>
+				<AiOutlineHeart
+					className='
+					text-pink-500
+					pl-6
+					py-2
+					h-14
+					w-14
+					mr-4
+					transition
+					hover:text-pink-600
+					hover:translate-y-0.5
+					duration-300
+					cursor-pointer
+					'
+				/>
 			</div>
 			<div className='flex items-center justify-center border border-gray-700 text-sm text-gray-900 rounded-full h-6 w-6 text-center -ml-3'>
 				0
 			</div>
 			<div onClick={() => setDisplayCheckout(!displayCheckout)}>
 				{displayCheckout === false && (
-					<i className='fa-solid fa-bag-shopping text-slate-600 pr-0.5 pl-6 py-2 text-xl sm:text-3xl mr-4 transition hover:opacity-60 duration-300 cursor-pointer'></i>
+					<GiShoppingCart className='text-slate-600 pr-0.5 pl-6 py-2 w-14 h-14 mr-4 transition hover:opacity-60 duration-300 cursor-pointer' />
 				)}
 			</div>
 			<div className='flex items-center justify-center border border-gray-700 text-sm text-gray-900 rounded-full h-6 w-6 text-center -ml-3 mr-7'>
