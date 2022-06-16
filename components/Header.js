@@ -66,7 +66,6 @@ function Header() {
 						</div>
 						<hr className='py-2' />
 						{Object.keys(state.products).map((productId, index) => {
-							console.log(product);
 							const prod = state.products[productId];
 							const product = state.prices.find(
 								(val) => val.id === productId
