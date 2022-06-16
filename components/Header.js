@@ -166,12 +166,12 @@ function Header() {
 					'
 				/>
 			</div>
-			<div className='flex items-center justify-center border border-gray-700 text-sm text-gray-900 rounded-full h-6 w-6 text-center -ml-3'>
+			<div className='flex items-center justify-center border border-gray-700 text-sm text-gray-900 rounded-full h-6 w-6 text-center -ml-3 '>
 				0
 			</div>
 			<div onClick={() => setDisplayCheckout(!displayCheckout)}>
 				{displayCheckout === false && (
-					<GiShoppingCart className='text-slate-600 pr-0.5 pl-6 py-2 w-14 h-14 mr-4 transition hover:opacity-60 duration-300 cursor-pointer' />
+					<GiShoppingCart className='text-slate-600 pr-0.5 pl-6 py-2 w-14 h-14 mr-4 transition hover:opacity-60 duration-300 cursor-pointer hover:translate-y-0.5' />
 				)}
 			</div>
 			<div className='flex items-center justify-center border border-gray-700 text-sm text-gray-900 rounded-full h-6 w-6 text-center -ml-3 mr-7'>
