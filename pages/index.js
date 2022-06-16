@@ -3,8 +3,9 @@ import Stripe from "stripe";
 import Head from "next/head";
 import Hero from "../components/Hero";
 import PurchaseCard from "../components/PurchaseCard";
+import Email from "../components/Email";
 import { useAppContext } from "../context/CardContext";
-import HeroTwo from "../components/HeroTwo";
+import Banner from "../components/Banner";
 
 export async function getServerSideProps(context) {
 	const stripe = new Stripe(process.env.STRIPE_SECRET ?? "", {
@@ -59,13 +60,15 @@ export default function Home({ prices }) {
 				</div>
 			</div>
 			<div className='w-11/12 mx-auto grid grid-cols-2 gap-6 md:grid-cols-4 md:gap-8 lg:grid-cols-8 lg:grid-rows-2 '>
-				<HeroTwo />
+				<Banner />
 				{featuredPrices.map((price, index) => {
 					return (
 						<PurchaseCard key={index} price={price}></PurchaseCard>
 					);
 				})}
 			</div>
+			{/* Email / Subscribe */}
+			<Email />
 		</div>
 	);
 }
