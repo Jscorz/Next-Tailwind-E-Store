@@ -14,6 +14,9 @@ module.exports = {
 				"screen/90": "90vh",
 				"screen/100": "100vh",
 			}),
+			scale: {
+				102: "102%",
+			},
 		},
 	},
 	plugins: [],

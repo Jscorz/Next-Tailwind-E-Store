@@ -25,13 +25,13 @@ export default function PurchaseCard(props) {
 	};
 
 	return (
-		<div className='mx-auto w-full h-100 shadow-md border border-solid border-gray-100 transition  hover:shadow-xl relative group'>
+		<div className='mx-auto w-full h-100 shadow-none transition md:hover:scale-102 duration-200  relative group'>
 			{price.product.images && (
 				<div className=''>
 					<img
 						src={price.product.images[0]}
 						alt={price.product.name}
-						className='w-full h-48 object-cover transition md:hover:scale-110 duration-200 overflow-hidden'
+						className='w-full h-48 object-cover '
 					/>
 				</div>
 			)}
@@ -58,7 +58,15 @@ export default function PurchaseCard(props) {
 					<GiShoppingCart className='justify-self-end' />
 				</div>
 			</div>
-			<div className='absolute top-5 right-5 max-h-28 w-8 bg-gray-100 opacity-50 hidden group-hover:block transition duration-300'>
+			{/* Here */}
+			<h1 className='text-slate-700 text-sm text-left pt-6 pb-3 font-base tracking-wide'>
+				{price.product.name}
+			</h1>
+			<p className='text-left text-sm pb-2 font-extralight'>
+				${price.unit_amount / 100}
+			</p>
+
+			<div className='absolute top-5 right-5 max-h-28 w-8 bg-gray-100 opacity-60 hidden group-hover:block transition duration-300'>
 				<div className='flex flex-col items-center justify-between'>
 					<div className='pb-3 pt-1 hover:scale-105'>
 						<AiOutlineHeart className='h-6 w-6' />
@@ -71,12 +79,6 @@ export default function PurchaseCard(props) {
 					</div>
 				</div>
 			</div>
-			{/* <h1 className='text-white text-sm text-center pt-6 pb-3 font-light tracking-wide'>
-				{price.product.name}
-			</h1> */}
-			{/* <p className='text-center text-sm pb-2 font-extralight'>
-				${price.unit_amount / 100}
-			</p> */}
 		</div>
 	);
 }

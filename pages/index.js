@@ -26,6 +26,7 @@ export async function getServerSideProps(context) {
 export default function Home({ prices }) {
 	const { state, dispatch } = useAppContext();
 	const [index, setIndex] = useState(true);
+	const featuredPrices = prices.slice(2, 6);
 
 	useEffect(() => {
 		dispatch({
@@ -58,8 +59,8 @@ export default function Home({ prices }) {
 				</div>
 			</div>
 			<HeroTwo />
-			<div className='w-11/12 mx-auto grid grid-cols-2 gap-4 md:flex-row md:space-y-2 md:space-x-5 lg:space-x-20'>
-				{prices.map((price, index) => {
+			<div className='w-11/12 mx-auto grid grid-cols-2 gap-4 md:grid-cols-4'>
+				{featuredPrices.map((price, index) => {
 					return (
 						<PurchaseCard key={index} price={price}></PurchaseCard>
 					);
