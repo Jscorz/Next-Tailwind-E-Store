@@ -1,34 +1,35 @@
-# Next Tailwind E Store
+# Shoes-In-Stock | Full Stack E-Commerce Store
 
-## Getting Started
+## Built with NextJS, TailwindCSS, and Stripe Backend for payments
 
-First, run the development server:
+**Link to project: [Live-demo]https://next-shoecommerce.netlify.app**
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+<!-- ![portfolio](static/mainImg.png) -->
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## **How It's Made:**
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+---
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Coming soon
 
-## Learn More
+<!-- ### I began building the project with a hello world starter from Gatsby's website. I decided to build out all the pages first and make sure the routing was setup correctly. When I was sure the routing was correct, I then built out the Navbar followed by the hero, services, experience, projects, and footer sections on the index.js page(home-page). Some of the data for these sections was imported from constants folder, and other data was pulled via GraphQL queries built upon a Strapi backend. Afterwards, I built the about page with more graphql queries. I also built out the projects page, but with same data via slightyly-altered queries from the projects section on the home page. The contact page was straightforward and the form is built upon formspree.io's backend to store the submissions. -->
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## **Tech used:**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+### HTML, CSS, Javascript, React JS, Next JS, TailwindCSS, Stripe Backend
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## **Optimizations:**
+
+---
+
+### Coming soon
+
+<!-- ### Optimization of the entire project was part of the reason Gatsby JS and GraphQL were chosen. Many of the built in plugins allowed me to pull data from queries and use static images to speed up loading times. The pages for individual projects were created programatically, saving plenty of time that would have been spent hard-coding data for the pages and SEO. Most sections with more than one of the same kind of element were either queries or constants that were iterated over to save code space as well. -->
