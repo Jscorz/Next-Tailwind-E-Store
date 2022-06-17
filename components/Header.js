@@ -135,16 +135,16 @@ function Header() {
 				ShoeCommerce
 			</h1>
 			<div className='flex justify-between space-x-10'>
-				<h1 className='hidden cursor-pointer  text-lg select-none transition hover:opacity-50 duration-300 md:block '>
+				<h1 className='hidden cursor-pointer text-lg select-none transition duration-300 hover:text-teal-400 md:block '>
 					Shop
 				</h1>
-				<h1 className='hidden cursor-pointer  text-lg select-none transition hover:opacity-50 duration-300 md:block '>
+				<h1 className='hidden cursor-pointer text-lg select-none transition duration-300 hover:text-teal-400 md:block '>
 					Products
 				</h1>
-				<h1 className='hidden cursor-pointer text-lg select-none transition hover:opacity-50 duration-300 md:block '>
+				<h1 className='hidden cursor-pointer text-lg select-none transition duration-300 hover:text-teal-400 md:block '>
 					About
 				</h1>
-				<h1 className='hidden cursor-pointer text-lg select-none transition hover:opacity-50 duration-300 md:block '>
+				<h1 className='hidden cursor-pointer text-lg select-none transition duration-300 hover:text-teal-400 md:block '>
 					Contact
 				</h1>
 			</div>

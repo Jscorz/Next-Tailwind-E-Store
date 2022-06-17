@@ -19,7 +19,7 @@ function Footer() {
 							<div className='w-6'>
 								<MdOutlineMail className='scale-10 text-2xl' />
 							</div>
-							<div>example@shoesinstock.com</div>
+							<div>productmanagement@shoesinstock.com</div>
 						</div>
 					</div>
 
