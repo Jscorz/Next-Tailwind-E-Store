@@ -14,6 +14,8 @@
 
 ### Coming soon
 
+### I began the project by creating a create-next-app, and after that I installed TailwindCSS and configured custom settings for Tailwind in the config file. I built out some of the simple parts of the website first such as the navbar and a basic card element to test connection the Stripe backend. I used a handler function to pull in the Stripe API and display products and checkout id's to match. I setup the different routes for checkout sucess/failure and made sure the products were displaying correctly. After that point where the main functionality of the store was working, I began styling the home page first, and the products, about, and contact pages afterwards.
+
 <!-- ### I began building the project with a hello world starter from Gatsby's website. I decided to build out all the pages first and make sure the routing was setup correctly. When I was sure the routing was correct, I then built out the Navbar followed by the hero, services, experience, projects, and footer sections on the index.js page(home-page). Some of the data for these sections was imported from constants folder, and other data was pulled via GraphQL queries built upon a Strapi backend. Afterwards, I built the about page with more graphql queries. I also built out the projects page, but with same data via slightyly-altered queries from the projects section on the home page. The contact page was straightforward and the form is built upon formspree.io's backend to store the submissions. -->
 
 ---
