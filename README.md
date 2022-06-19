@@ -4,15 +4,15 @@
 
 **Link to project: [Live-demo]https://next-shoecommerce.netlify.app**
 
-<!-- ![portfolio](static/mainImg.png) -->
+|                 Desktop                 |                     Mobile                     |
+| :-------------------------------------: | :--------------------------------------------: |
+| ![shoe-commerce](images/shoecomm-1.png) | ![shoe-commerce](images/shoecomm-mobile-1.png) |
 
 ---
 
 ## **How It's Made:**
 
 ---
-
-### Coming soon
 
 ### I began the project by creating a create-next-app, and installing TailwindCSS and then configured custom settings for Tailwind in the config file. I built out some of the simple parts of the website first such as the navbar and a basic card element to test connection the Stripe backend. I used a handler function to pull in the Stripe API and display products and checkout id's to match. I setup the different routes for checkout sucess/failure and made sure the products were displaying correctly. After that point where the main functionality of the store was working, I began styling the home page first, and the products, about, and contact pages afterwards.
 
