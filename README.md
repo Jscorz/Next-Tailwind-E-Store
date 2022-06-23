@@ -24,7 +24,7 @@
 
 ---
 
-### HTML, CSS, Javascript, React JS, Next JS, TailwindCSS, Stripe Backend
+### HTML, TailwindCSS, Javascript, React JS, Next JS, Stripe Backend
 
 ---
 
