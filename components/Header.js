@@ -3,6 +3,8 @@ import Router from "next/router";
 import { useAppContext } from "../context/CardContext";
 import { AiOutlineHeart } from "react-icons/ai";
 import { GiShoppingCart } from "react-icons/gi";
+import Image from "next/image";
+import logo from "../images/ShoesInStock.png";
 
 function Header() {
 	const { state, dispatch } = useAppContext();
@@ -48,7 +50,7 @@ function Header() {
 	}
 
 	return (
-		<div className='shadow-lg py-8 flex sticky top-0 justify-center items-center bg-white z-50 '>
+		<div className=' shadow-lg py-8 flex sticky top-0 justify-center items-center bg-white z-50 '>
 			{displayCheckout && (
 				<div
 					ref={modalRef}
@@ -128,12 +130,11 @@ function Header() {
 					</button>
 				</div>
 			)}
-			<h1
-				onClick={() => Router.push("/")}
-				className=' flex-1 text-left text-lg  pl-7 cursor-pointer select-none transition hover:opacity-50 duration-300'
-			>
-				ShoeCommerce
-			</h1>
+
+			<div className='flex-1 pl-10 cursor-pointer select-none transition hover:opacity-50 duration-300'>
+				<Image src={logo} alt='' onClick={() => Router.push("/")} />
+			</div>
+
 			<div className='flex justify-between space-x-10'>
 				<h1 className='hidden cursor-pointer text-lg select-none transition duration-300 hover:text-teal-400 md:block '>
 					Shop
