@@ -2,7 +2,7 @@
 
 ## Built with NextJS, TailwindCSS, and Stripe Backend for payments
 
-**Link to project: [Live-demo]https://next-shoecommerce.netlify.app**
+**Link to project: [Live-demo]https://shoesinstock.netlify.app/**
 
 |                   Desktop                   |                       Mobile                       |
 | :-----------------------------------------: | :------------------------------------------------: |
