@@ -131,7 +131,7 @@ function Header() {
 				</div>
 			)}
 
-			<div className='flex-1 pl-10 cursor-pointer select-none transition hover:opacity-50 duration-300'>
+			<div className='flex-1 pl-10 cursor-pointer select-none transition hover:opacity-50 duration-300 -z-20'>
 				<Image src={logo} alt='' onClick={() => Router.push("/")} />
 			</div>
 
