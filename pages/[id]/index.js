@@ -26,18 +26,19 @@ function Description(props) {
 		return <div>no product</div>;
 	}
 	return (
-		<div className='mx-auto w-fit flex flex-wrap justify-center md:gap-6'>
+		<div className='mx-auto w-fit flex flex-wrap justify-center md:gap-6 py-6'>
 			<img
 				src={product.product.images[0]}
 				alt={product.product.id}
 				style={{ maxHeight: "600px" }}
 			/>
-			<div className=''>
-				<div className='flex justify-between items-center pb-8'>
-					<h1 className='text-sm py-3 font-light tracking-wide capitalize text-2xl lg:text-3xl'>
+			<div>
+				<div className='flex flex-col justify-between items-center pt-2  space-y-2 lg:items-start'>
+					<h1 className=' py-3 pr-3 text-slate-800 font-light  capitalize text-xl lg:text-2xl'>
 						{product.product.name}
 					</h1>
-					<p>${product.unit_amount / 100}</p>
+					<p className='text-slate-700'>17 in stock</p>
+					<p className='text-red-500'>${product.unit_amount / 100}</p>
 				</div>
 				<div className='max-w-full whitespace-normal text-jusitfy pb-4 font-light'>
 					<p>{product.product.description}</p>
@@ -45,7 +46,7 @@ function Description(props) {
 				<hr />
 				<button
 					onClick={addToBasket(product)}
-					className='w-full my-4 py-4 border border-solid border-gray-100 shadow bg-slate-100 text-slate-700 font-light transition duration-300 hover:opacity-50'
+					className='w-full my-4 py-4 border border-solid shadow-lg bg-white text-slate-700  border-slate-700 font-light transition duration-300 hover:bg-slate-500 hover:text-white '
 				>
 					ADD TO BASKET
 				</button>
