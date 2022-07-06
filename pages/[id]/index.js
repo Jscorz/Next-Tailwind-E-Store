@@ -26,7 +26,7 @@ function Description(props) {
 		return <div>no product</div>;
 	}
 	return (
-		<div className='mx-auto w-fit flex flex-wrap justify-center md:gap-6 py-6'>
+		<div className='mx-auto w-fit flex flex-wrap justify-center md:gap-6 lg:py-6'>
 			<img
 				src={product.product.images[0]}
 				alt={product.product.id}
@@ -46,7 +46,7 @@ function Description(props) {
 				<hr />
 				<button
 					onClick={addToBasket(product)}
-					className='w-full my-4 py-4 border border-solid shadow-lg bg-white text-slate-700  border-slate-700 font-light transition duration-300 hover:bg-slate-700 hover:text-white '
+					className='w-full my-4 py-4 px-6 border border-solid shadow-lg bg-white text-slate-700  border-slate-700 font-light transition duration-300 hover:bg-slate-700 hover:text-white '
 				>
 					ADD TO BASKET
 				</button>
