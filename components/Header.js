@@ -147,10 +147,16 @@ function Header() {
 				>
 					Products
 				</h1>
-				<h1 className='hidden cursor-pointer text-lg select-none transition duration-300 hover:text-teal-400 md:block '>
+				<h1
+					onClick={() => Router.push("/about")}
+					className='hidden cursor-pointer text-lg select-none transition duration-300 hover:text-teal-400 md:block '
+				>
 					About
 				</h1>
-				<h1 className='hidden cursor-pointer text-lg select-none transition duration-300 hover:text-teal-400 md:block '>
+				<h1
+					onClick={() => Router.push("/contact")}
+					className='hidden cursor-pointer text-lg select-none transition duration-300 hover:text-teal-400 md:block '
+				>
 					Contact
 				</h1>
 			</div>

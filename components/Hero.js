@@ -38,7 +38,10 @@ function Hero() {
 
 			<div className='absolute bottom-12 right-10'>
 				<div>
-					<button className='m-1 shadow bg-white text-blackfont-light rounded-full text-sm uppercase tracking-wider py-5 px-6 transition duration-300 hover:bg-transparent hover:text-white hover: border hover:border-white select-none'>
+					<button
+						onClick={() => Router.push("/contact")}
+						className='m-1 shadow bg-white text-blackfont-light rounded-full text-sm uppercase tracking-wider py-5 px-6 transition duration-300 hover:bg-transparent hover:text-white hover: border hover:border-white select-none'
+					>
 						Chat with us!
 					</button>
 					<div className='absolute bottom-11 right-1 flex items-center justify-center border border-gray-700 text-sm bg-red-700 text-white rounded-full h-6 w-6 text-center'>

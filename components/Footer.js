@@ -1,4 +1,5 @@
 import React from "react";
+import Router from "next/router";
 import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
 import { MdOutlineMail } from "react-icons/md";
 import { AiOutlinePhone } from "react-icons/ai";
@@ -27,6 +28,7 @@ function Footer() {
 						<div className='flex flex-col space-y-3'>
 							<a
 								href='#'
+								onClick={() => Router.push("/about")}
 								className='transition duration-300 hover:text-teal-400'
 							>
 								About
@@ -53,6 +55,7 @@ function Footer() {
 						<div className='flex flex-col space-y-3'>
 							<a
 								href='#'
+								onClick={() => Router.push("/contact")}
 								className='transition duration-300 hover:text-teal-400'
 							>
 								Contact Us
