@@ -24,7 +24,6 @@ function Header() {
 			body: JSON.stringify({ lineItems }),
 		});
 		const data = await res.json();
-		console.log(data);
 		Router.push(data.session.url);
 	}
 	function increment(id, count) {
@@ -136,10 +135,16 @@ function Header() {
 			</div>
 
 			<div className='flex justify-between space-x-10'>
-				<h1 className='hidden cursor-pointer text-lg select-none transition duration-300 hover:text-teal-400 md:block '>
+				<h1
+					onClick={() => Router.push("/products")}
+					className='hidden cursor-pointer text-lg select-none transition duration-300 hover:text-teal-400 md:block '
+				>
 					Shop
 				</h1>
-				<h1 className='hidden cursor-pointer text-lg select-none transition duration-300 hover:text-teal-400 md:block '>
+				<h1
+					onClick={() => Router.push("/products")}
+					className='hidden cursor-pointer text-lg select-none transition duration-300 hover:text-teal-400 md:block '
+				>
 					Products
 				</h1>
 				<h1 className='hidden cursor-pointer text-lg select-none transition duration-300 hover:text-teal-400 md:block '>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Router from "next/router";
 import Image from "next/image";
 import heroImg from "../images/shoe-9.jpg";
 
@@ -26,7 +27,10 @@ function Hero() {
 						Black / Orange Nike
 					</h1>
 
-					<button className=' m-1 shadow bg-red-700 text-white font-light text-sm uppercase tracking-wider py-3 px-6 transition duration-300 hover:bg-red-900 select-none'>
+					<button
+						onClick={() => Router.push("/products")}
+						className=' m-1 shadow bg-red-700 text-white font-light text-sm uppercase tracking-wider py-3 px-6 transition duration-300 hover:bg-red-900 select-none'
+					>
 						Start Shopping
 					</button>
 				</div>
