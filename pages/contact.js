@@ -18,31 +18,34 @@ const contact = () => {
 						Contact Us
 					</h2>
 
-					<div className='grid grid-cols-1 gap-y-2 w-3/4 mx-auto md:grid-cols-2 md:gap-x-2 md:w-11/12 lg:w-full md:px-10'>
+					<form className='grid grid-cols-1 gap-y-2 w-3/4 mx-auto md:grid-cols-2 md:gap-x-2 md:w-11/12 lg:w-full md:px-10'>
 						<input
 							type='text'
 							placeholder='First Name'
-							className='p-2 px-4 text-center text-white bg-gray-200 border border-zinc-600  rounded placeholder:text-xs placeholder:text-center md:text-left placeholder:md:text-left focus:outline-none '
+							className='p-2 px-4 text-center text-zinc-800 bg-gray-200 border border-zinc-600  rounded placeholder:text-xs placeholder:text-center md:text-left placeholder:md:text-left focus:outline-none '
 						/>
 						<input
 							type='text'
 							placeholder='Last Name'
-							className='p-2 px-4 text-center text-white bg-gray-200 border border-zinc-600 rounded placeholder:text-xs placeholder:text-center md:text-left placeholder:md:text-left focus:outline-none'
+							className='p-2 px-4 text-center  text-zinc-800 bg-gray-200 border border-zinc-600 rounded placeholder:text-xs placeholder:text-center md:text-left placeholder:md:text-left focus:outline-none'
 						/>
 						<input
 							type='text'
 							placeholder='Your email address'
-							className='p-2 px-4 text-center text-white bg-gray-200 border border-zinc-600 rounded placeholder:text-xs placeholder:text-center md:text-left placeholder:md:text-left focus:outline-none md:col-span-2'
+							className='p-2 px-4 text-center  text-zinc-800 bg-gray-200 border border-zinc-600 rounded placeholder:text-xs placeholder:text-center md:text-left placeholder:md:text-left focus:outline-none md:col-span-2'
 						/>
 						<input
 							type='text'
 							placeholder='Phone'
-							className='p-2 px-4 text-center text-white bg-gray-200 border border-zinc-600 rounded placeholder:text-xs placeholder:text-center md:text-left placeholder:md:text-left focus:outline-none md:col-span-2'
+							className='p-2 px-4 text-center  text-zinc-800 bg-gray-200 border border-zinc-600 rounded placeholder:text-xs placeholder:text-center md:text-left placeholder:md:text-left focus:outline-none md:col-span-2'
 						/>
-						<button className='px-5 py-3 mb-10 text-xs  text-zinc-800 rounded bg-lime-500 hover:bg-lime-700 hover:text-white duration-500 md:col-span-2'>
+						<button
+							type='submit'
+							className='px-5 py-3 mb-10 text-xs  text-zinc-800 rounded bg-lime-500 hover:bg-lime-700 hover:text-white duration-500 md:col-span-2'
+						>
 							Submit
 						</button>
-					</div>
+					</form>
 				</div>
 			</div>
 		</div>
