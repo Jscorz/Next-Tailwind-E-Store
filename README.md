@@ -6,7 +6,7 @@
 
 |                   Desktop                   |                       Mobile                       |
 | :-----------------------------------------: | :------------------------------------------------: |
-| ![shoe-commerce](images/shoes-in-stock.png) | ![shoe-commerce](images/shoes-in-stock-mobile.png) |
+| ![shoe-commerce](images/shoes-in-stock.jpg) | ![shoe-commerce](images/shoes-in-stock-mobile.png) |
 
 ---
 
