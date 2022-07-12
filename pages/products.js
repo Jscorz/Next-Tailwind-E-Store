@@ -20,7 +20,7 @@ export async function getServerSideProps(context) {
 	};
 }
 
-const products = ({ prices }) => {
+const Products = ({ prices }) => {
 	const { state, dispatch } = useAppContext();
 	const [index, setIndex] = useState(true);
 	// const featuredPrices = prices.slice(2, 6);
@@ -64,4 +64,4 @@ const products = ({ prices }) => {
 	);
 };
 
-export default products;
+export default Products;
