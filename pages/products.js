@@ -43,14 +43,14 @@ const products = ({ prices }) => {
 			<link rel='icon' href='/favicon.ico' />
 
 			<div className='flex justify-center items-center space-x-4 py-14 px-5'>
-				<h1 className=' text-lg text-slate-900 font-semibold tracking-wider whitespace-nowrap md:text-2xl lg:text-3xl'>
+				<h1 className=' pl-4 text-lg text-slate-900 font-semibold tracking-wider whitespace-nowrap md:text-2xl md:pl-0 lg:text-3xl'>
 					Save up to 60% off
 				</h1>
 				<div>
-					<h2 className='text-sm uppercase whitespace-nowrap md:text-lg'>
+					<h2 className='mr-4 text-xs uppercase md:whitespace-nowrap md:text-lg md:mr-0'>
 						Login and use code save60 at checkout
 					</h2>
-					<div className='bg-slate-900 h-0.5 w-full'></div>
+					<div className='bg-slate-900 h-0.5 w-11/12 md:w-full'></div>
 				</div>
 			</div>
 			<div className='w-11/12 mx-auto grid grid-cols-2 gap-6 md:grid-cols-4 md:gap-8 lg:grid-cols-8 lg:grid-rows-2 '>
