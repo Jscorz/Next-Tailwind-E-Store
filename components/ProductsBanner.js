@@ -29,7 +29,7 @@ function ProductsBanner() {
 						className=' m-1 shadow bg-transparent text-white border border-white font-light text-sm uppercase tracking-wider py-3 px-6 transition duration-300 hover:bg-white hover:text-slate-900 select-none'
 						onClick={() => Router.push("/products")}
 					>
-						Start Shopping
+						go to products
 					</button>
 				</div>
 			</div>
