@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Stripe from "stripe";
 import { useAppContext } from "../context/CardContext";
 import PurchaseCard from "../components/PurchaseCard";
+import ProductsBanner from "../components/ProductsBanner";
 
 export async function getServerSideProps(context) {
 	const stripe = new Stripe(process.env.STRIPE_SECRET ?? "", {
@@ -42,6 +43,7 @@ const Products = ({ prices }) => {
 			/>
 			<link rel='icon' href='/favicon.ico' />
 
+			<ProductsBanner />
 			<div className='flex justify-center items-center space-x-4 py-14 px-5'>
 				<h1 className=' pl-4 text-lg text-slate-900 font-semibold tracking-wider whitespace-nowrap md:text-2xl md:pl-0 lg:text-3xl'>
 					Save up to 60% off
