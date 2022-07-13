@@ -19,16 +19,19 @@ function Email() {
 						Deals & New Shoes
 					</h2>
 
-					<div className='flex flex-col w-1/2 mx-auto lg:w-1/4 '>
+					<form className='flex flex-col w-1/2 mx-auto lg:w-1/4 '>
 						<input
 							type='text'
 							placeholder='Your email address'
-							className='p-2 px-4 text-center text-white bg-gray-200 border border-zinc-600 placeholder:text-xs placeholder:text-center md:text-left placeholder:md:text-left focus:outline-none'
+							className='p-2 px-4 text-center text-zinc-700 bg-gray-200 border border-zinc-600 placeholder:text-xs placeholder:text-center md:text-left placeholder:md:text-left focus:outline-none'
 						/>
-						<button className='px-5 py-3 text-xs  text-zinc-800 bg-lime-500 hover:bg-lime-700 hover:text-white duration-500'>
+						<button
+							type='submit'
+							className='px-5 py-3 text-xs  text-zinc-800 bg-lime-500 hover:bg-lime-700 hover:text-white duration-500'
+						>
 							Subscribe
 						</button>
-					</div>
+					</form>
 				</div>
 			</div>
 		</div>
