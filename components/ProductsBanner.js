@@ -16,7 +16,7 @@ function ProductsBanner() {
 			<div className='min-w-full flex flex-col z-10 absolute text-center top-1/3'>
 				<div className='w-30 space-y-4 md:space-y-8'>
 					<h2 className='text-white text-xl tracking-wide '>
-						Sale up to 50% Off
+						Sale up to 60% Off
 					</h2>
 					<h1 className='uppercase text-2xl text-white font-semibold tracking-wide md:text-5xl'>
 						MEGA SUMMER SALE
