@@ -21,7 +21,7 @@ function AboutBanner() {
 						Our Story
 					</h1>
 
-					<article className=' absolute  top-16 mx-20  bg-white bg-opacity-60 text-slate-900 border border-white font-light text-xs  tracking-wider p-6 transition duration-300 hover:bg-white hover:bg-opacity-50 hover:text-slate-900 select-none md:top-40 md:text-base lg:mx-96'>
+					<article className=' absolute  top-16 mx-20  bg-white bg-opacity-60 text-slate-900 border border-white font-light text-xs  tracking-wider p-6 transition duration-300 hover:bg-white hover:bg-opacity-50  select-none md:top-40 md:text-base lg:mx-96'>
 						We need to future-proof this win-win-win. Great plan!
 						Let me diarize this, and we can synchronize ourselves at
 						a later timeframe, for strategic staircase wiggle room.
