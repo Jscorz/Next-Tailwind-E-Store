@@ -1,18 +1,17 @@
-import React, { useState } from "react";
-import Router from "next/router";
+import React from "react";
 import Image from "next/image";
 import heroImg from "../images/shoe-15.jpg";
 
 function AboutBanner() {
 	return (
-		<div className='w-full  h-screen   relative z-0 mx-auto  overflow-hidden col-span-2 md:col-span-4 lg:row-span-2 '>
+		<div className='w-full  h-screen   relative z-0 mx-auto  overflow-hidden col-span-2 md:col-span-4 lg:row-span-2'>
 			<Image
 				src={heroImg}
 				alt=''
 				layout='fill'
 				className='object-cover z-0'
 			/>
-			<div className='absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 '></div>
+			<div className='absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900'></div>
 			<div className='min-w-full flex flex-col z-10 absolute text-center mt-20'>
 				<div className='w-30 space-y-4 md:space-y-8'>
 					<h1 className='uppercase text-4xl text-white font-semibold tracking-wide md:text-5xl'>
