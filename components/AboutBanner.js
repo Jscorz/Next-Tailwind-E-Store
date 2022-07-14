@@ -4,7 +4,7 @@ import heroImg from "../images/shoe-15.jpg";
 
 function AboutBanner() {
 	return (
-		<div className='w-full  h-screen   relative z-0 mx-auto  overflow-hidden col-span-2 md:col-span-4 lg:row-span-2'>
+		<div className='w-full  h-screen  relative z-0 mx-auto  overflow-hidden col-span-2 md:col-span-4 lg:row-span-2'>
 			<Image
 				src={heroImg}
 				alt=''
@@ -12,7 +12,7 @@ function AboutBanner() {
 				className='object-cover z-0'
 			/>
 			<div className='absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900'></div>
-			<div className='min-w-full flex flex-col z-10 absolute text-center mt-20'>
+			<div className='min-w-full flex flex-col z-10 absolute text-center mt-10'>
 				<div className='w-30 space-y-4 md:space-y-8'>
 					<h1 className='uppercase text-4xl text-white font-semibold tracking-wide md:text-5xl'>
 						Our Story
@@ -21,7 +21,7 @@ function AboutBanner() {
 						Our Story
 					</h1>
 
-					<article className=' absolute  top-16 mx-20  bg-transparent text-white border border-white font-light text-sm  tracking-wider p-6 transition duration-300 hover:bg-white hover:bg-opacity-50 hover:text-slate-900 select-none md:top-32 lg:mx-96'>
+					<article className=' absolute  top-16 mx-20  bg-white bg-opacity-60 text-slate-900 border border-white font-light text-xs  tracking-wider p-6 transition duration-300 hover:bg-white hover:bg-opacity-50 hover:text-slate-900 select-none md:top-40 md:text-base lg:mx-96'>
 						We need to future-proof this win-win-win. Great plan!
 						Let me diarize this, and we can synchronize ourselves at
 						a later timeframe, for strategic staircase wiggle room.
