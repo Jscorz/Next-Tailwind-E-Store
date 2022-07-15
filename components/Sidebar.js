@@ -15,13 +15,13 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
 					<li onClick={toggleSidebar}>
 						<div onClick={() => Router.push("/")}>Home</div>
 					</li>
-					<li>
+					<li onClick={toggleSidebar}>
 						<div onClick={() => Router.push("/about")}>About</div>
 					</li>
-					<li>
+					<li onClick={toggleSidebar}>
 						<div onClick={() => Router.push("/products")}>Shop</div>
 					</li>
-					<li>
+					<li onClick={toggleSidebar}>
 						<div onClick={() => Router.push("/contact")}>
 							Contact
 						</div>
