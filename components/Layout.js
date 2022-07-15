@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 
 function Layout(props) {
 	const { children } = props;
+	const [isOpen, setIsOpen] = useState(false);
+
+	const toggleSidebar = () => {
+		setIsOpen(!isOpen);
+	};
 	return (
 		<div className='relative min-h-screen flex flex-col shrink-0'>
-			<Header />
+			<Header toggleSidebar={toggleSidebar} />
 
 			<div className='flex flex-col flex-1 w-full shrink-0'>
 				<main>{children}</main>

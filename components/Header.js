@@ -3,10 +3,11 @@ import Router from "next/router";
 import { useAppContext } from "../context/CardContext";
 import { AiOutlineHeart } from "react-icons/ai";
 import { GiShoppingCart } from "react-icons/gi";
+import { GiHamburgerMenu } from "react-icons/gi";
 import Image from "next/image";
 import logo from "../images/ShoesInStock.png";
 
-function Header() {
+function Header({ toggleSidebar }) {
 	const { state, dispatch } = useAppContext();
 	const [displayCheckout, setDisplayCheckout] = React.useState(false);
 	const modalRef = React.useRef();
@@ -162,7 +163,7 @@ function Header() {
 			</div>
 			<div className='flex'>
 				<AiOutlineHeart
-					className='
+					className='hidden 
 					text-pink-500
 					pl-6
 					py-2
@@ -173,11 +174,11 @@ function Header() {
 					hover:text-pink-600
 					hover:translate-y-0.5
 					duration-300
-					cursor-pointer
+					cursor-pointer md:block
 					'
 				/>
 			</div>
-			<div className='flex items-center justify-center border border-gray-700 text-sm text-gray-900 rounded-full h-6 w-6 text-center -ml-3 select-none '>
+			<div className='hidden  items-center justify-center border border-gray-700 text-sm text-gray-900 rounded-full h-6 w-6 text-center -ml-3 select-none md:flex '>
 				0
 			</div>
 			<div onClick={() => setDisplayCheckout(!displayCheckout)}>
@@ -188,6 +189,13 @@ function Header() {
 			<div className='flex items-center justify-center border border-gray-700 text-sm text-gray-900 rounded-full h-6 w-6 text-center -ml-3 mr-7  select-none'>
 				<div>{Object.keys(state.products).length}</div>
 			</div>
+			<button
+				type='button'
+				className='border-2 border-red-500 flex items-center justify-center p-2 rounded-full text-xl text-red-500 mr-7 transition duration-300 cursor-pointer md:hidden'
+				onClick={toggleSidebar}
+			>
+				<GiHamburgerMenu />
+			</button>
 		</div>
 	);
 }
