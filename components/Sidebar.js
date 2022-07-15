@@ -1,8 +1,9 @@
 import React from "react";
+import Router from "next/router";
 import links from "../constants/links";
 import socialLinks from "../constants/social_links";
-import { Link } from "gatsby";
 import { FaTimes } from "react-icons/fa";
+
 const Sidebar = ({ isOpen, toggleSidebar }) => {
 	return (
 		<aside className={isOpen ? "sidebar show-sidebar" : "sidebar"}>
@@ -11,30 +12,20 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
 			</button>
 			<div className='side-container'>
 				<ul className={isOpen ? "sidebar-links" : null}>
-					{links.map((link) => {
-						return (
-							<li key={link.id}>
-								<Link to={link.url} onClick={toggleSidebar}>
-									{link.text}
-								</Link>
-							</li>
-						);
-					})}
-				</ul>
-				<ul className={isOpen ? "social-links sidebar-icons" : null}>
-					{socialLinks.map((link) => {
-						return (
-							<li key={link.id} className='social-link'>
-								<Link
-									to={link.url}
-									rel='noreferrer'
-									target='_blank'
-								>
-									{link.icon}
-								</Link>
-							</li>
-						);
-					})}
+					<li onClick={toggleSidebar}>
+						<div onClick={() => Router.push("/")}>Home</div>
+					</li>
+					<li>
+						<div onClick={() => Router.push("/about")}>About</div>
+					</li>
+					<li>
+						<div onClick={() => Router.push("/products")}>Shop</div>
+					</li>
+					<li>
+						<div onClick={() => Router.push("/contact")}>
+							Contact
+						</div>
+					</li>
 				</ul>
 			</div>
 		</aside>
