@@ -12,6 +12,8 @@ function Hero() {
 				src={heroImg}
 				alt=''
 				layout='fill'
+				placeholder='blur'
+				priority
 				className='object-cover z-0 '
 			/>
 			<div className='absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 '></div>
