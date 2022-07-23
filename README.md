@@ -4,9 +4,9 @@
 
 **Link to project: [Live-demo]https://shoesinstock.netlify.app/**
 
-|                   Desktop                   |                       Mobile                       |
-| :-----------------------------------------: | :------------------------------------------------: |
-| ![shoe-commerce](images/shoes-in-stock.jpg) | ![shoe-commerce](images/shoes-in-stock-mobile.png) |
+---
+
+![screen-gif](./images//ezgif.com-gif-maker.gif)
 
 ---
 
