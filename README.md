@@ -1,6 +1,6 @@
 # Shoes-In-Stock | Full Stack E-Commerce Store
 
-## Built with NextJS, TailwindCSS, and Stripe Backend for payments
+## Built with NextJS, TailwindCSS, and Stripe Backend for payments/checkout
 
 **Link to project: [Live-demo]https://shoesinstock.netlify.app/**
 
