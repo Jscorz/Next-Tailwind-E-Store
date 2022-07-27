@@ -31,7 +31,7 @@ function Hero() {
 
 					<button
 						onClick={() => Router.push("/products")}
-						className=' m-1 shadow bg-red-700 text-white font-light text-sm uppercase tracking-wider py-3 px-6 transition duration-300 hover:bg-red-900 select-none'
+						className=' m-1 shadow bg-slate-800 bg-opacity-70 text-white font-light text-sm uppercase tracking-wider py-3 px-6 transition duration-300 hover:scale-95 select-none relative before:absolute before:w-2/3 before:h-2/3 before:top-0 before:left-0 before:border-t before:border-l before:border-red-600 after:absolute after:w-2/3 after:h-2/3 after:bottom-0 after:right-0 after:border-b after:border-r after:border-red-600 hover:after:w-full hover:after:h-full hover:before:w-full hover:before:h-full before:duration-300 after:duration-300'
 					>
 						Start Shopping
 					</button>
