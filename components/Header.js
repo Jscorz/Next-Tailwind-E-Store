@@ -138,25 +138,25 @@ function Header({ toggleSidebar }) {
 			<div className='flex justify-between space-x-10'>
 				<h1
 					onClick={() => Router.push("/products")}
-					className='hidden cursor-pointer text-lg select-none transition duration-300 hover:text-teal-400 md:block '
+					className='hidden relative overflow-hidden cursor-pointer text-lg select-none transition duration-300  hover:text-cyan-400 md:block  after:h-[1px] after:w-full after:bottom-0 after:right-full after:bg-cyan-400 after:absolute hover:after:translate-x-full after:duration-300 '
 				>
 					Shop
 				</h1>
 				<h1
 					onClick={() => Router.push("/products")}
-					className='hidden cursor-pointer text-lg select-none transition duration-300 hover:text-teal-400 md:block '
+					className='hidden relative overflow-hidden cursor-pointer text-lg select-none transition duration-300  hover:text-cyan-400 md:block  after:h-[1px] after:w-full after:bottom-0 after:right-full after:bg-cyan-400 after:absolute hover:after:translate-x-full after:duration-300 '
 				>
 					Products
 				</h1>
 				<h1
 					onClick={() => Router.push("/about")}
-					className='hidden cursor-pointer text-lg select-none transition duration-300 hover:text-teal-400 md:block '
+					className='hidden relative overflow-hidden cursor-pointer text-lg select-none transition duration-300  hover:text-cyan-400 md:block  after:h-[1px] after:w-full after:bottom-0 after:right-full after:bg-cyan-400 after:absolute hover:after:translate-x-full after:duration-300  '
 				>
 					About
 				</h1>
 				<h1
 					onClick={() => Router.push("/contact")}
-					className='hidden cursor-pointer text-lg select-none transition duration-300 hover:text-teal-400 md:block '
+					className='hidden relative overflow-hidden cursor-pointer text-lg select-none transition duration-300  hover:text-cyan-400 md:block  after:h-[1px] after:w-full after:bottom-0 after:right-full after:bg-cyan-400 after:absolute hover:after:translate-x-full after:duration-300  '
 				>
 					Contact
 				</h1>
