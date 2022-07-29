@@ -5,7 +5,7 @@ import { MdOutlineMail } from "react-icons/md";
 import { AiOutlinePhone } from "react-icons/ai";
 function Footer() {
 	return (
-		<footer className='bg-darkBlue2 text-slate-900'>
+		<footer className='bg-zinc-900 text-white'>
 			<div className='container mx-auto pt-12 px-5 pb-10'>
 				<div className='flex flex-col justify-between space-y-24 md:flex-row md:space-y-0'>
 					<div className='mt-10 space-y-6'>
@@ -78,17 +78,17 @@ function Footer() {
 					<div className='flex justify-center pb-10 space-x-3'>
 						<div classNameName='w-10 h-20'>
 							<a href='#'>
-								<BsFacebook className='p-2 rounded-full ficon text-blue-900 w-10 h-10 ' />
+								<BsFacebook className='p-2 rounded-full ficon text-blue-700 w-10 h-10 ' />
 							</a>
 						</div>
 						<div classNameName='w-10 h-20'>
 							<a href='#'>
-								<BsTwitter className='p-2 rounded-full ficon text-blue-900 w-10 h-10 ' />
+								<BsTwitter className='p-2 rounded-full ficon text-blue-700 w-10 h-10 ' />
 							</a>
 						</div>
 						<div classNameName='w-10 h-20'>
 							<a href='#'>
-								<BsInstagram className='p-2  ficon w-10 h-10 text-blue-900' />
+								<BsInstagram className='p-2  ficon w-10 h-10 text-blue-700' />
 							</a>
 						</div>
 					</div>

@@ -29,8 +29,8 @@ export async function getServerSideProps(context) {
 export default function Home({ prices }) {
 	const { state, dispatch } = useAppContext();
 	const [index, setIndex] = useState(true);
-	const featuredPrices = prices.slice(2, 6);
-	const secondFeaturedPrices = prices.slice(4, 10).reverse();
+	const featuredPrices = prices.slice(0, 4);
+	const secondFeaturedPrices = prices.slice(4, 10);
 
 	useEffect(() => {
 		dispatch({
@@ -40,7 +40,7 @@ export default function Home({ prices }) {
 	}, [prices]);
 
 	return (
-		<div>
+		<div className='pb-10'>
 			<Head>
 				<title>Shoe-In-Stock</title>
 				<meta
