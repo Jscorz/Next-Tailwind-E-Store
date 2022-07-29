@@ -60,7 +60,7 @@ export default function PurchaseCard(props) {
 				</div>
 			</div>
 			{/* Here */}
-			<h1 className='text-slate-700 text-md text-left pt-6 pb-1 font-light tracking-wide'>
+			<h1 className='text-slate-700 text-md text-left pt-2 pb-1 font-light tracking-wide'>
 				{price.product.name}
 			</h1>
 			<p className='text-left text-red-600 text-md font-light'>
