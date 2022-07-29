@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import Router from "next/router";
 import Image from "next/image";
-import heroImg from "../images/shoe-2.jpg";
+import heroImg from "../images/shoe-11.jpg";
 
-function HeroTwo() {
+function BannerTwo() {
 	return (
-		<div className='w-full  h-96  md:h-screen/70 relative z-0 mx-auto  overflow-hidden col-span-2 md:col-span-4 lg:row-span-2 '>
+		<div className='w-full  h-96  md:h-screen/70 relative z-0 mx-auto  overflow-hidden col-span-2 md:col-span-4 lg:row-span-2  lg:col-span-6'>
 			<Image
 				src={heroImg}
 				alt=''
@@ -39,4 +39,4 @@ function HeroTwo() {
 	);
 }
 
-export default HeroTwo;
+export default BannerTwo;
