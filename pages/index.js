@@ -55,7 +55,7 @@ export default function Home({ prices }) {
 			</Head>
 
 			<Hero />
-			<div className='flex justify-center items-center space-x-4 py-14 px-5'>
+			<div className='flex justify-center items-center space-x-4 py-14 px-5 lg:justify-between lg:px-16'>
 				<h1 className='text-lg text-slate-900 font-semibold tracking-wider whitespace-nowrap md:text-2xl lg:text-3xl'>
 					Handpicked Items
 				</h1>
@@ -76,9 +76,9 @@ export default function Home({ prices }) {
 			</div>
 			{/* Email / Subscribe */}
 			<Email />
-			<div className='flex justify-center items-center space-x-4 py-14 px-5'>
+			<div className='flex justify-center items-center space-x-4 py-14 px-5 lg:justify-between lg:px-16'>
 				<h1 className='text-lg text-slate-900 font-semibold tracking-wider whitespace-nowrap md:text-2xl lg:text-3xl'>
-					Handpicked Items
+					Featured Products
 				</h1>
 				<div>
 					<h2 className='text-sm uppercase whitespace-nowrap md:text-xl lg:text-2xl'>
