@@ -55,7 +55,7 @@ export default function Home({ prices }) {
 			</Head>
 
 			<Hero />
-			<div className='flex justify-center items-center space-x-4 py-14 px-5 lg:justify-between lg:px-16'>
+			<div className='w-10/12 flex justify-center items-center space-x-4 py-14 mx-auto lg:justify-between '>
 				<h1 className='text-lg text-slate-900 font-semibold tracking-wider whitespace-nowrap md:text-2xl lg:text-3xl'>
 					Handpicked Items
 				</h1>
@@ -66,7 +66,7 @@ export default function Home({ prices }) {
 					<div className='bg-slate-900 h-0.5 w-full'></div>
 				</div>
 			</div>
-			<div className='w-11/12 mx-auto grid grid-cols-2 gap-6 md:grid-cols-4 md:gap-8 lg:grid-cols-8 lg:grid-rows-2 '>
+			<div className='w-10/12 mx-auto grid grid-cols-2 gap-6 md:grid-cols-4 md:gap-8 lg:grid-cols-8 lg:grid-rows-2 '>
 				<Banner />
 				{featuredPrices.map((price, index) => {
 					return (
@@ -76,7 +76,7 @@ export default function Home({ prices }) {
 			</div>
 			{/* Email / Subscribe */}
 			<Email />
-			<div className='flex justify-center items-center space-x-4 py-14 px-5 lg:justify-between lg:px-16'>
+			<div className='w-10/12 flex justify-center items-center space-x-4 py-14 mx-auto lg:justify-between '>
 				<h1 className='text-lg text-slate-900 font-semibold tracking-wider whitespace-nowrap md:text-2xl lg:text-3xl'>
 					Featured Products
 				</h1>
@@ -87,7 +87,7 @@ export default function Home({ prices }) {
 					<div className='bg-slate-900 h-0.5 w-full'></div>
 				</div>
 			</div>
-			<div className='w-11/12 mx-auto grid grid-cols-2 gap-6 md:grid-cols-4 md:gap-8 lg:grid-cols-8 lg:grid-rows-2 '>
+			<div className='w-10/12 mx-auto grid grid-cols-2 gap-6 md:grid-cols-4 md:gap-8 lg:grid-cols-8 lg:grid-rows-2 '>
 				<BannerTwo />
 				{secondFeaturedPrices.map((price, index) => {
 					return (
