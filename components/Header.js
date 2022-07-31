@@ -161,7 +161,7 @@ function Header({ toggleSidebar }) {
 					Contact
 				</h1>
 			</div>
-			<div className='flex'>
+			{/* <div className='flex'>
 				<AiOutlineHeart
 					className='hidden 
 					text-pink-500
@@ -177,13 +177,13 @@ function Header({ toggleSidebar }) {
 					cursor-pointer md:block
 					'
 				/>
-			</div>
-			<div className='hidden  items-center justify-center border border-gray-700 text-sm text-gray-900 rounded-full h-6 w-6 text-center -ml-3 select-none md:flex '>
+			</div> */}
+			{/* <div className='hidden  items-center justify-center border border-gray-700 text-sm text-gray-900 rounded-full h-6 w-6 text-center -ml-3 select-none md:flex '>
 				0
-			</div>
+			</div> */}
 			<div onClick={() => setDisplayCheckout(!displayCheckout)}>
 				{displayCheckout === false && (
-					<GiShoppingCart className='text-slate-600 pr-0.5 pl-6 py-2 w-14 h-14 mr-4 transition hover:opacity-60 duration-300 cursor-pointer hover:translate-y-0.5' />
+					<GiShoppingCart className='text-slate-600 pr-0.5 pl-6 py-2 w-14 h-14 mr-4 transition duration-100 cursor-pointer hover:scale-105' />
 				)}
 			</div>
 			<div className='flex items-center justify-center border border-gray-700 text-sm text-gray-900 rounded-full h-6 w-6 text-center -ml-3 mr-7  select-none'>
