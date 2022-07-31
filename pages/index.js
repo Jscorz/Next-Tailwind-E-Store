@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
+import Router from "next/router";
 import Stripe from "stripe";
 import Head from "next/head";
 import Hero from "../components/Hero";
+import Email from "../components/Email";
 import PurchaseCard from "../components/PurchaseCard";
 import PurchaseCardTwo from "../components/PurchaseCardTwo";
-import Email from "../components/Email";
-import { useAppContext } from "../context/CardContext";
 import Banner from "../components/Banner";
 import BannerTwo from "../components/BannerTwo";
+import { useAppContext } from "../context/CardContext";
 
 export async function getServerSideProps(context) {
 	const stripe = new Stripe(process.env.STRIPE_SECRET ?? "", {
@@ -60,9 +61,12 @@ export default function Home({ prices }) {
 					Handpicked Items
 				</h1>
 				<div>
-					<h2 className='text-sm uppercase whitespace-nowrap md:text-xl lg:text-2xl'>
+					<button
+						onClick={() => Router.push("/products")}
+						className='text-sm uppercase whitespace-nowrap md:text-xl lg:text-2xl'
+					>
 						View All Products
-					</h2>
+					</button>
 					<div className='bg-slate-900 h-0.5 w-full'></div>
 				</div>
 			</div>
@@ -81,9 +85,12 @@ export default function Home({ prices }) {
 					Featured Products
 				</h1>
 				<div>
-					<h2 className='text-sm uppercase whitespace-nowrap md:text-xl lg:text-2xl'>
+					<button
+						onClick={() => Router.push("/products")}
+						className='text-sm uppercase whitespace-nowrap md:text-xl lg:text-2xl'
+					>
 						View All Products
-					</h2>
+					</button>
 					<div className='bg-slate-900 h-0.5 w-full'></div>
 				</div>
 			</div>
