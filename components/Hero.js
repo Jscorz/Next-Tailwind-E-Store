@@ -38,7 +38,8 @@ function Hero() {
 				</div>
 			</div>
 
-			<div className='absolute bottom-12 right-10'>
+			{/* Chat With Us Button */}
+			{/* <div className='absolute bottom-12 right-10'>
 				<div>
 					<button
 						onClick={() => Router.push("/contact")}
@@ -50,7 +51,7 @@ function Hero() {
 						1
 					</div>
 				</div>
-			</div>
+			</div> */}
 		</div>
 	);
 }
