@@ -5,7 +5,7 @@ import heroImg from "../images/shoe-17.jpg";
 
 function BannerThree() {
 	return (
-		<div className='w-full  h-96  md:h-screen/70 relative z-0 mx-auto  overflow-hidden col-span-2 md:col-span-4 lg:row-span-2 '>
+		<div className='w-full  h-96 mt-10  md:h-screen/70 relative z-0 mx-auto  overflow-hidden col-span-2 md:col-span-4 lg:row-span-2 '>
 			<Image
 				src={heroImg}
 				alt=''

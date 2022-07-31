@@ -28,7 +28,10 @@ export default function PurchaseCardTwo(props) {
 	return (
 		<div className='mx-auto w-full h-100 shadow-none transition md:hover:scale-102 duration-200  relative group lg:col-span-2 lg:row-span-1'>
 			{price.product.images && (
-				<div className=''>
+				<div
+					className='cursor-pointer'
+					onClick={() => Router.push(`/${price.id}`)}
+				>
 					<img
 						src={price.product.images[0]}
 						alt={price.product.name}
