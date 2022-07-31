@@ -50,7 +50,7 @@ function Header({ toggleSidebar }) {
 	}
 
 	return (
-		<div className=' shadow-lg py-8 flex sticky top-0 justify-center items-center bg-white z-50 '>
+		<div className=' shadow-lg py-8 flex sticky top-0 justify-center items-center bg-white/75 z-50 '>
 			{displayCheckout && (
 				<div
 					ref={modalRef}
