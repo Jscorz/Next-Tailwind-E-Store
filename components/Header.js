@@ -54,7 +54,7 @@ function Header({ toggleSidebar }) {
 			{displayCheckout && (
 				<div
 					ref={modalRef}
-					className='absolute bg-white shadow border border-gray-200 border-solid z-0 top-0 h-screen w-screen sm:w-80 right-0 flex flex-col gap-2 px-2'
+					className='absolute bg-white shadow border border-gray-200 border-solid z-20 top-0 h-screen w-screen sm:w-80 right-0 flex flex-col gap-2 px-2'
 				>
 					<div className='overflow-auto flex-1'>
 						<div className='flex justify-between items-center'>
