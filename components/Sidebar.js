@@ -11,7 +11,11 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
 				<FaTimes />
 			</button>
 			<div className='side-container'>
-				<ul className={isOpen ? "sidebar-links" : null}>
+				<ul
+					className={
+						isOpen ? "sidebar-links" : "sidebar-links_hidden"
+					}
+				>
 					<li onClick={toggleSidebar}>
 						<div onClick={() => Router.push("/")}>Home</div>
 					</li>

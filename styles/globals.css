@@ -61,6 +61,19 @@ Sidebar
 	background: red;
 	color: white;
 }
+.sidebar-links_hidden li div {
+	display: hidden;
+	text-align: center;
+	text-transform: capitalize;
+	color: grey;
+	letter-spacing: normal;
+	margin-bottom: 0.5rem;
+	padding-right: 2rem;
+	padding-left: 2rem;
+	font-size: 2rem;
+	transition: all 2s;
+	border-radius: 1rem;
+}
 .close-btn {
 	position: absolute;
 	right: 4.75%;
