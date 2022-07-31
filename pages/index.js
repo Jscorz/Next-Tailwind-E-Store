@@ -8,6 +8,7 @@ import PurchaseCard from "../components/PurchaseCard";
 import PurchaseCardTwo from "../components/PurchaseCardTwo";
 import Banner from "../components/Banner";
 import BannerTwo from "../components/BannerTwo";
+import BannerThree from "../components/BannerThree";
 import { useAppContext } from "../context/CardContext";
 
 export async function getServerSideProps(context) {
@@ -79,7 +80,7 @@ export default function Home({ prices }) {
 				})}
 			</div>
 			{/* Email / Subscribe */}
-			<Email />
+			<BannerThree />
 			<div className='w-10/12 flex justify-center items-center space-x-4 py-14 mx-auto lg:justify-between '>
 				<h1 className='text-lg text-slate-900 font-semibold tracking-wider whitespace-nowrap md:text-2xl lg:text-3xl'>
 					Featured Products
@@ -105,6 +106,7 @@ export default function Home({ prices }) {
 					);
 				})}
 			</div>
+			<Email />
 		</div>
 	);
 }
