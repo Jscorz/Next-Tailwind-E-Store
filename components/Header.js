@@ -58,7 +58,7 @@ function Header({ toggleSidebar }) {
 				>
 					<div className='overflow-auto flex-1'>
 						<div className='flex justify-between items-center'>
-							<h1 className='text-4xl py-4'>CART</h1>
+							<h1 className='text-4xl py-4 pl-4'>CART</h1>
 							<div
 								className='ml-auto w-fit p-2 cursor-pointer select-none transition duration-300 opacity-60 hover:text-red-700 text-lg'
 								onClick={() => setDisplayCheckout(false)}
