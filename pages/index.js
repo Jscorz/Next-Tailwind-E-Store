@@ -71,7 +71,7 @@ export default function Home({ prices }) {
 					<div className='bg-slate-900 h-0.5 w-full'></div>
 				</div>
 			</div>
-			<div className='w-10/12 mx-auto grid grid-cols-2 gap-6 md:grid-cols-4 md:gap-8 lg:grid-cols-8 lg:grid-rows-2 '>
+			<div className='w-10/12 mx-auto grid grid-cols-2 gap-4 md:grid-cols-4 lg:gap-8 lg:grid-cols-8 lg:grid-rows-2 '>
 				<Banner />
 				{featuredPrices.map((price, index) => {
 					return (
@@ -95,7 +95,7 @@ export default function Home({ prices }) {
 					<div className='bg-slate-900 h-0.5 w-full'></div>
 				</div>
 			</div>
-			<div className='w-10/12 mx-auto grid grid-cols-2 gap-6 md:grid-cols-4 md:gap-8 lg:grid-cols-8 lg:grid-rows-2 '>
+			<div className='w-10/12 mx-auto grid grid-cols-2 gap-4 md:grid-cols-4 lg:gap-8 lg:grid-cols-8 lg:grid-rows-2 '>
 				<BannerTwo />
 				{secondFeaturedPrices.map((price, index) => {
 					return (
