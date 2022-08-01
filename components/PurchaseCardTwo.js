@@ -39,7 +39,7 @@ export default function PurchaseCardTwo(props) {
 					/>
 				</div>
 			)}
-			<div className='flex justify-between file:z-50 align-center bg-red-500 opacity-90 '>
+			<div className='flex justify-between file:z-50 align-center bg-red-500/75 opacity-90 '>
 				<div
 					className='flex flex-1 text-2xl cursor-pointer text-white  border border-gray-400 py-2 pr-2 justify-center select-none hover:bg-red-600 transition duration-100'
 					onClick={() => Router.push(`/${price.id}`)}
