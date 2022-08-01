@@ -22,12 +22,6 @@ function Hero() {
 					<h2 className='text-white uppercase text-xl tracking-wide lg:text-5xl lg:tracking-wider'>
 						Free Shipping on all usa orders $60+
 					</h2>
-					{/* <h1 className='uppercase text-2xl text-white font-semibold tracking-wide md:text-5xl'>
-						Shoes In Stock
-					</h1> */}
-					{/* <h1 className='absolute -inset-0 uppercase hidden text-7xl text-white opacity-10 font-semibold tracking-wide whitespace-nowrap -z-50 md:block lg:tracking-wider lg:text-9xl'>
-						Shoes In Stock
-					</h1> */}
 
 					<button
 						onClick={() => Router.push("/products")}

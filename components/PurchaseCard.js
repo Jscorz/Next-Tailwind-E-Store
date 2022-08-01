@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Router from "next/router";
-import NextImage from "next/image";
 import { GiShoppingCart } from "react-icons/gi";
 import { AiOutlineHeart } from "react-icons/ai";
 import { VscGitCompare } from "react-icons/vsc";
@@ -32,6 +31,7 @@ export default function PurchaseCard(props) {
 					className='cursor-pointer'
 					onClick={() => Router.push(`/${price.id}`)}
 				>
+					<div className='hidden top-0 bottom-0 right-0 left-0 bg-gradient-to-t from-transparent to-cyan-600 group-hover:absolute group-hover:block'></div>
 					<img
 						src={price.product.images[0]}
 						alt={price.product.name}
@@ -40,27 +40,12 @@ export default function PurchaseCard(props) {
 				</div>
 			)}
 			<div className='flex justify-between file:z-50 align-center bg-red-500 opacity-90 '>
-				<div
-					className='px-2 text-xl  text-white font-semibold cursor-pointer border border-gray-400 text-center py-2 select-none hover:bg-red-600 hover:scale-102 transition duration-100'
-					onClick={() => reduceCount()}
-				>
-					-
-				</div>
-				<div className='px-2 text-xl  text-white font-semibold border border-gray-400 py-2 select-none'>
-					{numOfItems}
-				</div>
-				<div
-					className='px-2 text-xl  text-white font-semibold cursor-pointer border border-gray-400 py-2 select-none hover:bg-red-600 hover:scale-102 transition duration-100'
-					onClick={() => addCount()}
-				>
-					+
-				</div>
-				<div
-					className='flex flex-1 text-2xl cursor-pointer text-white  border border-gray-400 py-2 pr-2 justify-center select-none hover:bg-red-600 hover:scale-102 transition duration-100'
+				<button
+					className='flex flex-1 text-2xl cursor-pointer text-white  border border-gray-400 py-2 pr-2 justify-center select-none hover:bg-red-600 transition duration-100'
 					onClick={() => Router.push(`/${price.id}`)}
 				>
-					<GiShoppingCart className='justify-self-end' />
-				</div>
+					<GrView />
+				</button>
 			</div>
 			{/* Here */}
 			<h1 className='text-slate-700 text-md text-left pt-2 pb-1 font-light tracking-wide'>
@@ -72,14 +57,11 @@ export default function PurchaseCard(props) {
 
 			<div className='absolute top-5 right-5 max-h-28 w-8 bg-gray-100 opacity-60 hidden group-hover:block transition duration-300'>
 				<div className='flex flex-col items-center justify-between'>
-					<div className='pb-3 pt-1 hover:scale-105'>
+					<div className='pb-2 pt-1 hover:scale-105'>
 						<AiOutlineHeart className='h-6 w-6' />
 					</div>
-					<div className='pb-3 hover:scale-105'>
+					<div className='pb-1 hover:scale-105'>
 						<VscGitCompare className='h-6 w-6' />
-					</div>
-					<div className='pb-1 hover:scale-110'>
-						<GrView className='h-6 w-6' />
 					</div>
 				</div>
 			</div>

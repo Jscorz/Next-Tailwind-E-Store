@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Router from "next/router";
-import NextImage from "next/image";
 import { GiShoppingCart } from "react-icons/gi";
 import { AiOutlineHeart } from "react-icons/ai";
 import { VscGitCompare } from "react-icons/vsc";
