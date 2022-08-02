@@ -17,7 +17,7 @@ function Hero() {
 				className='object-cover z-0 '
 			/>
 			<div className='absolute top-0 bottom-0 right-0 left-0 '></div>
-			<div className='min-w-full flex flex-col z-10 absolute text-center mt-56 '>
+			<div className='min-w-full flex flex-col z-10 absolute text-center mt-40 '>
 				<div className='w-30 space-y-8'>
 					<h2 className='text-white uppercase text-xl tracking-wide lg:text-5xl lg:tracking-wider'>
 						Free Shipping on all usa orders $60+
