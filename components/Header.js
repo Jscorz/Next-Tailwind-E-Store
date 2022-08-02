@@ -50,7 +50,7 @@ function Header({ toggleSidebar }) {
 	}
 
 	return (
-		<div className=' shadow-lg py-4  flex sticky top-0 justify-center items-center bg-white z-50 lg:px-4'>
+		<div className=' shadow-lg py-2  flex sticky top-0 justify-center items-center bg-white z-50 lg:px-4'>
 			{displayCheckout && (
 				<div
 					ref={modalRef}
@@ -131,11 +131,11 @@ function Header({ toggleSidebar }) {
 				</div>
 			)}
 
-			<div className='flex-1 pl-10 cursor-pointer select-none transition hover:opacity-50 duration-300 -z-20'>
+			<div className='flex-1 pt-1 pl-10 cursor-pointer select-none transition hover:opacity-50 duration-300 -z-20'>
 				<Image src={logo} alt='' onClick={() => Router.push("/")} />
 			</div>
 
-			<div className='flex justify-between space-x-10'>
+			<div className='flex justify-between space-x-10 lg:space-x-16'>
 				<h1
 					onClick={() => Router.push("/products")}
 					className='hidden relative overflow-hidden cursor-pointer text-lg select-none transition duration-300  hover:text-cyan-400 md:block  after:h-[1px] after:w-full after:bottom-0 after:right-full after:bg-cyan-400 after:absolute hover:after:translate-x-full after:duration-300 '
