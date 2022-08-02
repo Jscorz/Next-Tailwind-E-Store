@@ -25,7 +25,10 @@ export default function PurchaseCard(props) {
 	};
 
 	return (
-		<div className='mx-auto w-full h-100 shadow-none transition md:hover:scale-102 duration-200  relative group lg:col-span-2 lg:row-span-1'>
+		<section
+			id='products'
+			className='mx-auto w-full h-100 shadow-none transition md:hover:scale-102 duration-200  relative group lg:col-span-2 lg:row-span-1'
+		>
 			{price.product.images && (
 				<div
 					className='cursor-pointer'
@@ -48,10 +51,10 @@ export default function PurchaseCard(props) {
 				</button>
 			</div>
 			{/* Here */}
-			<h1 className='text-slate-800 text-md text-left pt-2 pb-1 font-light tracking-wide'>
+			<h1 className='text-slate-800 text-sm text-left pt-2 pb-1 font-light tracking-wide '>
 				{price.product.name}
 			</h1>
-			<p className='text-left text-slate-600 text-md font-light'>
+			<p className='text-left text-slate-600 text-sm font-light '>
 				${price.unit_amount / 100}
 			</p>
 
@@ -65,6 +68,6 @@ export default function PurchaseCard(props) {
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 }
