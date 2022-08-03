@@ -43,7 +43,7 @@ const contact = () => {
 						/>
 						<button
 							type='submit'
-							className='px-5 py-3 mb-10 text-xs  text-zinc-800 rounded bg-mintGreen hover:bg-cyan-600 hover:text-white duration-500 md:col-span-2'
+							className='px-5 py-3 mb-10 text-xs  text-zinc-800 rounded bg-mintGreen/75 hover:bg-cyan-600 hover:text-white duration-500 md:col-span-2'
 						>
 							Submit
 						</button>

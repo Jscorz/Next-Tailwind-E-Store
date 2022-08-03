@@ -46,7 +46,7 @@ function Description(props) {
 				<hr />
 				<button
 					onClick={addToBasket(product)}
-					className='w-full my-4 py-4 px-6 border border-solid shadow-md bg-white text-slate-700  border-slate-700 font-light transition duration-300 hover:bg-slate-700 hover:text-white '
+					className='w-full my-4 py-4 px-6 border border-solid shadow-md bg-mintGreen text-slate-700  border-slate-700 font-light transition duration-300 hover:bg-cyan-700 hover:text-white '
 				>
 					ADD TO BASKET
 				</button>

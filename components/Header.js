@@ -124,7 +124,7 @@ function Header({ toggleSidebar }) {
 					</div>
 					<button
 						onClick={checkout}
-						className=' m-1 shadow bg-black text-white font-light text-sm py-2 transition duration-300 hover:border hover:border-black hover:bg-transparent hover:text-black select-none'
+						className=' m-1 shadow bg-mintGreen text-slate-700 font-light text-sm py-2 transition duration-300 border border-slate-700 hover:bg-cyan-600 hover:text-white select-none'
 					>
 						CHECKOUT
 					</button>
