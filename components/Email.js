@@ -27,7 +27,7 @@ function Email() {
 						/>
 						<button
 							type='submit'
-							className='px-5 py-3 text-xs  text-zinc-800 bg-lime-500 hover:bg-lime-600 hover:scale-[98%]  hover:text-white transition duration-300'
+							className='px-5 py-3 text-xs  text-zinc-800 bg-mintGreen hover:bg-cyan-600  hover:text-white transition duration-300'
 						>
 							Subscribe
 						</button>

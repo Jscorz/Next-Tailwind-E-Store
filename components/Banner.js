@@ -28,7 +28,7 @@ function HeroTwo() {
 					</h1>
 
 					<button
-						className=' m-1 shadow bg-mintGreen/75 text-slate-700 font-light text-sm uppercase tracking-wider py-3 px-6 transition duration-300 hover:bg-red-900 select-none'
+						className=' m-1 shadow bg-mintGreen/75 text-slate-700 font-light text-sm uppercase tracking-wider py-3 px-6 transition duration-300 hover:bg-mintGreen/50 select-none'
 						onClick={() => Router.push("/products")}
 					>
 						See Products
