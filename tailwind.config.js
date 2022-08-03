@@ -17,6 +17,9 @@ module.exports = {
 			scale: {
 				102: "102%",
 			},
+			colors: {
+				mintGreen: "#4dfed1",
+			},
 		},
 	},
 	plugins: [],
