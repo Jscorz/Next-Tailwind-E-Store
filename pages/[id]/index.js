@@ -37,6 +37,23 @@ function Description(props) {
 					<h1 className=' py-3 pr-3 text-slate-800 font-light  capitalize text-xl lg:text-2xl'>
 						{product.product.name}
 					</h1>
+					<form>
+						<label className='text-slate-700'>
+							Size
+							<select className='px-3 py-1 ml-4 shadow'>
+								<option value='4'>4</option>
+								<option value='5'>5</option>
+								<option value='6'>6</option>
+								<option value='7'>7</option>
+								<option value='8'>8</option>
+								<option value='9'>9</option>
+								<option value='10'>10</option>
+								<option value='11'>11</option>
+								<option value='12'>12</option>
+								<option value='13'>13</option>
+							</select>
+						</label>
+					</form>
 					<p className='text-slate-700'>17 in stock</p>
 					<p className='text-red-500'>${product.unit_amount / 100}</p>
 				</div>
