@@ -191,7 +191,7 @@ function Header({ toggleSidebar }) {
 			</div>
 			<button
 				type='button'
-				className='border-2 border-red-500 flex items-center justify-center p-2 rounded-full text-xl text-red-500 mr-7 transition duration-300 cursor-pointer md:hidden'
+				className='border-2 border-cyan-500 flex items-center justify-center p-2 rounded-full text-xl text-cyan-500 mr-7 transition duration-300 cursor-pointer md:hidden'
 				onClick={toggleSidebar}
 			>
 				<GiHamburgerMenu />
