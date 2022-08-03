@@ -58,8 +58,9 @@ Sidebar
 	border-radius: 1rem;
 }
 .sidebar-links li div:hover {
-	background: red;
-	color: white;
+	background: cyan;
+	background-opacity: 75%;
+	color: slate;
 }
 .sidebar-links_hidden li div {
 	display: hidden;
