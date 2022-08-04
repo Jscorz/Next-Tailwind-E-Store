@@ -78,17 +78,17 @@ function Footer() {
 					<div className='flex justify-center pb-10 space-x-3'>
 						<div classNameName='w-10 h-20'>
 							<a href='#'>
-								<BsFacebook className='p-2 rounded-full ficon text-blue-700 w-10 h-10 ' />
+								<BsFacebook className='p-2 rounded-full ficon text-cyan-500 w-10 h-10 ' />
 							</a>
 						</div>
 						<div classNameName='w-10 h-20'>
 							<a href='#'>
-								<BsTwitter className='p-2 rounded-full ficon text-blue-700 w-10 h-10 ' />
+								<BsTwitter className='p-2 rounded-full ficon text-cyan-500 w-10 h-10 ' />
 							</a>
 						</div>
 						<div classNameName='w-10 h-20'>
 							<a href='#'>
-								<BsInstagram className='p-2  ficon w-10 h-10 text-blue-700' />
+								<BsInstagram className='p-2  ficon w-10 h-10 text-cyan-500' />
 							</a>
 						</div>
 					</div>
