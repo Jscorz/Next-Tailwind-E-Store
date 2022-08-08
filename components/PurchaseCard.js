@@ -27,7 +27,7 @@ export default function PurchaseCard(props) {
 	return (
 		<section
 			id='products'
-			className='mx-auto w-full h-100 shadow-none transition md:hover:scale-102 duration-200  relative group lg:col-span-2 lg:row-span-1'
+			className='mx-auto w-full h-100 shadow-none transition md:hover:scale-102 duration-200  overflow-hidden rounded-md  relative group lg:col-span-2 lg:row-span-1'
 		>
 			{price.product.images && (
 				<div
@@ -42,9 +42,9 @@ export default function PurchaseCard(props) {
 					/>
 				</div>
 			)}
-			<div className='flex justify-between file:z-50 align-center bg-cyan-500 opacity-70 '>
+			<div className='flex justify-between file:z-50 align-center'>
 				<button
-					className='flex flex-1 text-2xl cursor-pointer text-slate-900  border border-gray-800 py-1 pr-2 justify-center select-none hover:bg-cyan-600 transition duration-100'
+					className='flex flex-1 text-2xl cursor-pointer text-slate-900  bg-mintGreen/75 opacity-90 overflow-hidden rounded-b-md  border border-gray-800 py-1 pr-2 justify-center select-none hover:bg-cyan-500 transition duration-100'
 					onClick={() => Router.push(`/${price.id}`)}
 				>
 					<GrView />

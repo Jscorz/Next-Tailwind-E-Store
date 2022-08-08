@@ -5,7 +5,7 @@ import heroImg from "../images/shoe-2.jpg";
 
 function HeroTwo() {
 	return (
-		<div className='w-full  h-96  md:h-screen/70 relative z-0 mx-auto  overflow-hidden col-span-2 md:col-span-4 lg:row-span-2 '>
+		<div className='w-full  h-96  md:h-screen/70 relative z-0 mx-auto  rounded-md overflow-hidden col-span-2 md:col-span-4 lg:row-span-2 '>
 			<Image
 				src={heroImg}
 				alt=''
@@ -28,7 +28,7 @@ function HeroTwo() {
 					</h1>
 
 					<button
-						className=' m-1 shadow bg-cyan-500/75 text-white font-light text-sm uppercase tracking-wider py-3 px-6 transition duration-300 hover:bg-mintGreen/50 select-none'
+						className=' m-1 shadow bg-mintGreen/75 text-slate-800 font-light text-sm uppercase tracking-wider py-3 px-6 transition duration-300 rounded-md hover:bg-mintGreen/50 select-none'
 						onClick={() => Router.push("/products")}
 					>
 						See Products

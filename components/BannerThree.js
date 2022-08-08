@@ -28,7 +28,7 @@ function BannerThree() {
 					</h1>
 
 					<button
-						className=' m-1 shadow bg-transparent text-white font-light text-sm uppercase tracking-wider py-3 px-6 transition duration-300   select-none relative before:absolute before:w-2/3 before:h-2/3 before:top-0 before:left-0 before:border-t before:border-l before:border-white after:absolute after:w-2/3 after:h-2/3 after:bottom-0 after:right-0 after:border-b after:border-r after:border-white hover:after:w-full hover:after:h-full hover:before:w-full hover:before:h-full before:duration-300 after:duration-300'
+						className=' m-1 shadow bg-transparent text-white font-light text-sm uppercase tracking-wider py-3 px-6 transition duration-300 select-none relative before:absolute before:w-2/3 before:h-2/3 before:top-0 before:left-0 before:border-t before:border-l before:border-white after:absolute after:w-2/3 after:h-2/3 after:bottom-0 after:right-0 after:border-b after:border-r after:border-white hover:after:w-full hover:after:h-full hover:before:w-full hover:before:h-full before:duration-300 after:duration-300'
 						onClick={() => Router.push("/products")}
 					>
 						go to products

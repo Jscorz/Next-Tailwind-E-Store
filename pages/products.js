@@ -66,7 +66,7 @@ const Products = ({ prices }) => {
 			<div className='w-full flex items-center mt-16'>
 				<button
 					onClick={() => Router.push("/")}
-					className='border border-slate-900 bg-mintGreen/75 text-slate-800  py-2 px-7 uppercase mx-auto rounded-sm transition duration-300 hover:bg-mintGreen/50 hover:text-slate-900 select-none'
+					className='border border-slate-900 bg-cyan-500 opacity-90 text-slate-800  py-2 px-7 uppercase mx-auto rounded-md transition duration-300 hover:bg-mintGreen/25 hover:text-slate-900 select-none'
 				>
 					back to home
 				</button>

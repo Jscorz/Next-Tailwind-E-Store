@@ -5,7 +5,7 @@ import heroImg from "../images/shoe-11.jpg";
 
 function BannerTwo() {
 	return (
-		<div className='w-full  h-96  md:h-screen/70 relative z-0 mx-auto  overflow-hidden col-span-2 md:col-span-4 lg:row-span-2  lg:col-span-6'>
+		<div className='w-full  h-96  md:h-screen/70 relative z-0 mx-auto  rounded-md overflow-hidden col-span-2 md:col-span-4 lg:row-span-2  lg:col-span-6'>
 			<Image
 				src={heroImg}
 				alt=''
@@ -28,7 +28,7 @@ function BannerTwo() {
 					</h1>
 
 					<button
-						className=' m-1 shadow-lg bg-mintGreen/75 text-slate-800 font-light text-sm uppercase tracking-wider py-3 px-6 transition duration-200 hover:bg-mintGreen/50 select-none'
+						className=' m-1 shadow-lg bg-mintGreen/75 text-slate-800 font-light text-sm uppercase tracking-wider py-3 px-6 transition duration-200 rounded-md hover:bg-mintGreen/50 select-none'
 						onClick={() => Router.push("/products")}
 					>
 						See Products
