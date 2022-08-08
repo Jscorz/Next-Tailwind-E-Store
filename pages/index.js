@@ -10,6 +10,7 @@ import Banner from "../components/Banner";
 import BannerTwo from "../components/BannerTwo";
 import BannerThree from "../components/BannerThree";
 import { useAppContext } from "../context/CardContext";
+import BrandBanner from "../components/BrandBanner";
 
 export async function getServerSideProps(context) {
 	const stripe = new Stripe(process.env.STRIPE_SECRET ?? "", {
@@ -57,6 +58,7 @@ export default function Home({ prices }) {
 			</Head>
 
 			<Hero />
+			<BrandBanner />
 			<div className='w-10/12 flex justify-center items-center space-x-4 py-14 mx-auto lg:justify-between '>
 				<h1 className='text-lg text-slate-900 font-semibold tracking-wider whitespace-nowrap md:text-2xl lg:text-3xl'>
 					Handpicked Items
