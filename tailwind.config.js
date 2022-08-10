@@ -20,6 +20,9 @@ module.exports = {
 			colors: {
 				mintGreen: "#4dfed1",
 			},
+			backgroundImage: {
+				"wave-pattern": "url('/images/layered-waves-haikei.png')",
+			},
 		},
 	},
 	plugins: [],

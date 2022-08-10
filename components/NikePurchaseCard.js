@@ -4,24 +4,8 @@ import { AiOutlineHeart } from "react-icons/ai";
 import { VscGitCompare } from "react-icons/vsc";
 import { GrView } from "react-icons/gr";
 
-export default function PurchaseCard(props) {
-	const { price } = props;
-	const [numOfItems, setNumOfItems] = useState(1);
-
-	const reduceCount = () => {
-		if (numOfItems <= 0) {
-			setNumOfItems(0);
-		} else {
-			setNumOfItems(numOfItems - 1);
-		}
-	};
-	const addCount = () => {
-		if (numOfItems >= 0) {
-			setNumOfItems(numOfItems + 1);
-		} else if ((numOfItems = 10)) {
-			setNumOfItems(numOfItems);
-		}
-	};
+export default function NikePurchaseCard(props) {
+	let { price } = props;
 
 	return (
 		<section
