@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import Stripe from "stripe";
 import { useAppContext } from "../context/CardContext";
 import NikePurchaseCard from "../components/NikePurchaseCard";
@@ -24,7 +24,6 @@ export async function getServerSideProps(context) {
 
 const NikeProducts = ({ prices }) => {
 	const { state, dispatch } = useAppContext();
-	const [index, setIndex] = useState(true);
 
 	const nikePrices = Object.values(prices).filter((item) => {
 		return item.product.metadata["Brand"] === "Nike";
@@ -60,7 +59,7 @@ const NikeProducts = ({ prices }) => {
 				</div>
 			</div>
 			<div className='w-10/12 mx-auto grid grid-cols-2 gap-4 md:grid-cols-4 lg:gap-8 lg:grid-cols-8 lg:grid-rows-2 '>
-				<div className='absolute bottom-0 left-0 right-0 bg-cyan-600/50 h-full w-1/2 translate-y-8 -z-20'></div>
+				<div className='absolute bottom-44 left-40 right-0 bg-cyan-600/50 h-[115%] w-1/2 translate-y-96 -z-20 rotate-45'></div>
 				{nikePrices.map((price, index) => {
 					return (
 						<NikePurchaseCard
