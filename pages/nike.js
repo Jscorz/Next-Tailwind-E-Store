@@ -4,7 +4,6 @@ import { useAppContext } from "../context/CardContext";
 import NikePurchaseCard from "../components/NikePurchaseCard";
 import ProductsBanner from "../components/ProductsBanner";
 import Router from "next/router";
-import backgroundSVG from "../images/layered-waves-haikei.png";
 
 export async function getServerSideProps(context) {
 	const stripe = new Stripe(process.env.STRIPE_SECRET ?? "", {
@@ -17,9 +16,7 @@ export async function getServerSideProps(context) {
 	});
 
 	const prices = res.data.filter((price) => price.active);
-	// const nikePrices = res.data.filter(
-	// 	(price) => price.metadata.brand === "Nike"
-	// );
+
 	return {
 		props: { prices },
 	};
@@ -28,16 +25,11 @@ export async function getServerSideProps(context) {
 const NikeProducts = ({ prices }) => {
 	const { state, dispatch } = useAppContext();
 	const [index, setIndex] = useState(true);
-	// const featuredPrices = prices.slice(2, 6);
+
 	const nikePrices = Object.values(prices).filter((item) => {
 		return item.product.metadata["Brand"] === "Nike";
 	});
-	// console.log(
-	// 	Object.values(prices).filter((item) => {
-	// 		return item.product.metadata["Brand"] === "Nike";
-	// 	})
-	// );
-	console.log(nikePrices);
+
 	useEffect(() => {
 		dispatch({
 			type: "set_prices",
@@ -68,7 +60,7 @@ const NikeProducts = ({ prices }) => {
 				</div>
 			</div>
 			<div className='w-10/12 mx-auto grid grid-cols-2 gap-4 md:grid-cols-4 lg:gap-8 lg:grid-cols-8 lg:grid-rows-2 '>
-				<div className='absolute bottom-0 left-0 right-0 bg-cyan-600 h-[28rem] w-full'></div>
+				<div className='absolute bottom-0 left-0 right-0 bg-cyan-600/50 h-full w-1/2 translate-y-8 -z-20'></div>
 				{nikePrices.map((price, index) => {
 					return (
 						<NikePurchaseCard
