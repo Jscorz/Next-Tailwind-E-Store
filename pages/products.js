@@ -57,7 +57,7 @@ const Products = ({ prices }) => {
 				</div>
 			</div>
 			<div className='w-10/12 mx-auto grid grid-cols-2 gap-4 md:grid-cols-4 lg:gap-8 lg:grid-cols-8 lg:grid-rows-2 '>
-				<div className='absolute bottom-5 left-10 right-0 bg-cyan-600/50 h-full w-1/2 translate-y-8 -z-20 rotate-45'></div>
+				<div className='absolute bottom-5 left-10 right-0 bg-cyan-600/50 h-[115%] w-1/2 translate-y-48 -z-20 rotate-45'></div>
 				{prices.map((price, index) => {
 					return (
 						<PurchaseCard key={index} price={price}></PurchaseCard>
