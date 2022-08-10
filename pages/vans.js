@@ -59,7 +59,7 @@ const VansProducts = ({ prices }) => {
 				</div>
 			</div>
 			<div className='w-10/12 mx-auto grid grid-cols-2 gap-4 md:grid-cols-4 lg:gap-8 lg:grid-cols-8 lg:grid-rows-2 '>
-				<div className='absolute bottom-44 left-40 right-0 bg-cyan-600/50 h-[115%] w-1/2 translate-y-96 -z-20 rotate-45'></div>
+				<div className='absolute bottom-0 left-0 right-50 bg-cyan-600/50 h-[115%] w-1/2 translate-y-96 -z-20 lg:rotate-45 lg:bottom-44 lg:left-40'></div>
 				{vansPrices.map((price, index) => {
 					return (
 						<PurchaseCard key={index} price={price}></PurchaseCard>
