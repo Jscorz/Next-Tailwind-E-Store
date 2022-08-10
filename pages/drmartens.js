@@ -22,7 +22,7 @@ export async function getServerSideProps(context) {
 	};
 }
 
-const drMartensProducts = ({ prices }) => {
+const DrMartensProducts = ({ prices }) => {
 	const { state, dispatch } = useAppContext();
 
 	const drMartensPrices = Object.values(prices).filter((item) => {
@@ -78,4 +78,4 @@ const drMartensProducts = ({ prices }) => {
 	);
 };
 
-export default drMartensProducts;
+export default DrMartensProducts;
