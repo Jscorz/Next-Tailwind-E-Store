@@ -22,11 +22,11 @@ export async function getServerSideProps(context) {
 	};
 }
 
-const NikeProducts = ({ prices }) => {
+const VansProducts = ({ prices }) => {
 	const { state, dispatch } = useAppContext();
 
-	const nikePrices = Object.values(prices).filter((item) => {
-		return item.product.metadata["Brand"] === "Nike";
+	const vansPrices = Object.values(prices).filter((item) => {
+		return item.product.metadata["Brand"] === "Adidas";
 	});
 
 	useEffect(() => {
@@ -49,7 +49,7 @@ const NikeProducts = ({ prices }) => {
 			<ProductsBanner />
 			<div className='w-10/12 flex justify-center items-center space-x-4 py-14 mx-auto lg:justify-between '>
 				<h1 className=' pl-4 text-lg text-slate-900 font-semibold tracking-wider whitespace-nowrap md:text-2xl md:pl-0 lg:text-3xl'>
-					Nike
+					Vans Off The Wall
 				</h1>
 				<div>
 					<h2 className='mr-4 text-xs uppercase md:whitespace-nowrap md:text-lg md:mr-0'>
@@ -60,7 +60,7 @@ const NikeProducts = ({ prices }) => {
 			</div>
 			<div className='w-10/12 mx-auto grid grid-cols-2 gap-4 md:grid-cols-4 lg:gap-8 lg:grid-cols-8 lg:grid-rows-2 '>
 				<div className='absolute bottom-44 left-40 right-0 bg-cyan-600/50 h-[115%] w-1/2 translate-y-96 -z-20 rotate-45'></div>
-				{nikePrices.map((price, index) => {
+				{vansPrices.map((price, index) => {
 					return (
 						<PurchaseCard key={index} price={price}></PurchaseCard>
 					);
@@ -78,4 +78,4 @@ const NikeProducts = ({ prices }) => {
 	);
 };
 
-export default NikeProducts;
+export default VansProducts;
