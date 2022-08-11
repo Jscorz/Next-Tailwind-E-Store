@@ -6,7 +6,7 @@
 
 ---
 
-![screen-gif](./images//ezgif.com-gif-maker.gif)
+![screen-gif](./images/ezgif.com-gif-maker-sis-store.gif)
 
 ---
 
