@@ -17,8 +17,8 @@ export default async function handler(req, res) {
 			apiVersion: "2020-08-27",
 		});
 		const session = await stripe.checkout.sessions.create({
-			success_url: "http://localhost:3000/success",
-			cancel_url: "http://localhost:3000/cancel",
+			success_url: "https://shoesinstock.netlify.app/success",
+			cancel_url: "https://shoesinstock.netlify.app/cancel",
 			line_items: body.lineItems,
 			mode: "payment",
 		});
