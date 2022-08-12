@@ -24,8 +24,11 @@ export async function getServerSideProps(context) {
 
 const Products = ({ prices }) => {
 	const { state, dispatch } = useAppContext();
-	const [index, setIndex] = useState(true);
-	// const featuredPrices = prices.slice(2, 6);
+	const [filterValue, setFilterValue] = useState("Nike");
+
+	let filteredPrices = Object.values(prices).filter((item) => {
+		return item.product.metadata["Brand"] === filterValue;
+	});
 
 	useEffect(() => {
 		dispatch({
@@ -33,6 +36,12 @@ const Products = ({ prices }) => {
 			value: prices,
 		});
 	}, [prices]);
+
+	useEffect(() => {
+		filteredPrices = Object.values(prices).filter((item) => {
+			return item.product.metadata["Brand"] === filterValue;
+		});
+	}, []);
 
 	return (
 		<div className='border-b-2 border-zinc-700 pb-24 relative'>
@@ -56,11 +65,31 @@ const Products = ({ prices }) => {
 					<div className='bg-slate-900 h-0.5 w-11/12 md:w-full'></div>
 				</div>
 			</div>
+			<form className='pb-8'>
+				<label className='text-slate-700 ml-40 '>
+					Brand
+					<select
+						onChange={(e) => setFilterValue(e.target.value)}
+						value={filterValue}
+						className='px-3 py-1 ml-4 shadow'
+					>
+						<option value='Nike'>Nike</option>
+						<option value='Dr Martens'>Dr Martens</option>
+						<option value='Adidas'>Adidas</option>
+						<option value='Vans'>Vans</option>
+						<option value='Converse'>Converse</option>
+					</select>
+				</label>
+			</form>
 			<div className='w-10/12 mx-auto grid grid-cols-2 gap-4 md:grid-cols-4 lg:gap-8 lg:grid-cols-8 lg:grid-rows-2 '>
 				<div className='absolute bottom-0 left-0 right-50 bg-cyan-600/50 h-[115%] w-1/2 translate-y-48 -z-20 lg:rotate-45 lg:bottom-5 lg:left-10'></div>
-				{prices.map((price, index) => {
+				{filteredPrices.map((price, index) => {
 					return (
-						<PurchaseCard key={index} price={price}></PurchaseCard>
+						<PurchaseCard
+							filter={filterValue}
+							key={index}
+							price={price}
+						></PurchaseCard>
 					);
 				})}
 			</div>
