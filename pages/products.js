@@ -66,7 +66,7 @@ const Products = ({ prices }) => {
 				</div>
 			</div>
 			<form className='pb-8'>
-				<label className='text-slate-700 ml-40 '>
+				<label className='text-slate-700 ml-12 lg:ml-40 '>
 					Brand
 					<select
 						onChange={(e) => setFilterValue(e.target.value)}
