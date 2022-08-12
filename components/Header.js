@@ -1,9 +1,9 @@
 import React from "react";
 import Router from "next/router";
 import { useAppContext } from "../context/CardContext";
-import { AiOutlineHeart } from "react-icons/ai";
 import { GiShoppingCart } from "react-icons/gi";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { FaHome } from "react-icons/fa";
 import Image from "next/image";
 import logo from "../images/ShoesInStock.png";
 
@@ -181,12 +181,17 @@ function Header({ toggleSidebar }) {
 			{/* <div className='hidden  items-center justify-center border border-gray-700 text-sm text-gray-900 rounded-full h-6 w-6 text-center -ml-3 select-none md:flex '>
 				0
 			</div> */}
-			<div onClick={() => setDisplayCheckout(!displayCheckout)}>
+			<button onClick={() => Router.push("/")}>
 				{displayCheckout === false && (
-					<GiShoppingCart className='text-slate-600 pr-0.5 pl-6 py-2 w-14 h-14 mr-4 transition duration-100 cursor-pointer hover:scale-105' />
+					<FaHome className='text-cyan-500  pl-7 py-2 w-14 h-14 mr-2 transition duration-100  hover:scale-105' />
 				)}
-			</div>
-			<div className='flex items-center justify-center border border-gray-700 text-sm text-gray-900 rounded-full h-6 w-6 text-center -ml-3 mr-7  select-none'>
+			</button>
+			<button onClick={() => setDisplayCheckout(!displayCheckout)}>
+				{displayCheckout === false && (
+					<GiShoppingCart className='text-slate-600 pr-0.5 pl-6 py-1 w-14 h-14 mr-4 transition duration-100  hover:scale-105' />
+				)}
+			</button>
+			<div className='flex items-center justify-center border border-gray-700 text-sm text-gray-900 rounded-full h-6 w-6 text-center -ml-4 mr-7  select-none'>
 				<div>{Object.keys(state.products).length}</div>
 			</div>
 			<button
