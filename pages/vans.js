@@ -26,7 +26,7 @@ const VansProducts = ({ prices }) => {
 	const { state, dispatch } = useAppContext();
 
 	const vansPrices = Object.values(prices).filter((item) => {
-		return item.product.metadata["Brand"] === "Adidas";
+		return item.product.metadata["Brand"] === "Vans";
 	});
 
 	useEffect(() => {
