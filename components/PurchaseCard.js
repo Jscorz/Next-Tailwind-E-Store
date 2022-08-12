@@ -6,7 +6,6 @@ import { GrView } from "react-icons/gr";
 
 export default function PurchaseCard(props) {
 	const { price } = props;
-	console.log(price);
 	return (
 		<section
 			id='products'
