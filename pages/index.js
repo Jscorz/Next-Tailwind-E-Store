@@ -31,9 +31,8 @@ export async function getServerSideProps(context) {
 
 export default function Home({ prices }) {
 	const { state, dispatch } = useAppContext();
-	const featuredPrices = prices.slice(11);
+	const featuredPrices = prices.slice(5, 9);
 	const secondFeaturedPrices = prices.slice(4, 10);
-	console.log(prices);
 
 	useEffect(() => {
 		dispatch({
