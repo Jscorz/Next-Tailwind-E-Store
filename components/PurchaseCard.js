@@ -6,23 +6,7 @@ import { GrView } from "react-icons/gr";
 
 export default function PurchaseCard(props) {
 	const { price } = props;
-	const [numOfItems, setNumOfItems] = useState(1);
-
-	const reduceCount = () => {
-		if (numOfItems <= 0) {
-			setNumOfItems(0);
-		} else {
-			setNumOfItems(numOfItems - 1);
-		}
-	};
-	const addCount = () => {
-		if (numOfItems >= 0) {
-			setNumOfItems(numOfItems + 1);
-		} else if ((numOfItems = 10)) {
-			setNumOfItems(numOfItems);
-		}
-	};
-
+	console.log(price);
 	return (
 		<section
 			id='products'

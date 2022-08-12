@@ -18,7 +18,7 @@ export async function getServerSideProps(context) {
 	});
 
 	const res = await stripe.prices.list({
-		limit: 10,
+		limit: 30,
 		expand: ["data.product"],
 	});
 
@@ -31,9 +31,9 @@ export async function getServerSideProps(context) {
 
 export default function Home({ prices }) {
 	const { state, dispatch } = useAppContext();
-	const [index, setIndex] = useState(true);
-	const featuredPrices = prices.slice(0, 4);
+	const featuredPrices = prices.slice(11);
 	const secondFeaturedPrices = prices.slice(4, 10);
+	console.log(prices);
 
 	useEffect(() => {
 		dispatch({

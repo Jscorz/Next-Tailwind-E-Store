@@ -11,7 +11,7 @@ export async function getServerSideProps(context) {
 	});
 
 	const res = await stripe.prices.list({
-		limit: 10,
+		limit: 30,
 		expand: ["data.product"],
 	});
 
@@ -24,7 +24,6 @@ export async function getServerSideProps(context) {
 
 const NikeProducts = ({ prices }) => {
 	const { state, dispatch } = useAppContext();
-
 	const nikePrices = Object.values(prices).filter((item) => {
 		return item.product.metadata["Brand"] === "Nike";
 	});
